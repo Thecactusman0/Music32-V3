@@ -1,5 +1,48 @@
 (kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 492e826b-8900-4c12-8604-1c812b2e1995)
+
   (paper "A4")
-  (lib_symbols)
-  (symbol_instances)
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 86.36 54.61) (size 13.97 8.89) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 4998783d-7055-40b0-9979-647930a37834)
+    (property "Sheetname" "PSU" (at 86.36 53.8984 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "psu.kicad_sch" (at 86.36 64.0846 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Music32v3"
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995" (page "3"))
+      )
+    )
+  )
+
+  (sheet (at 60.96 54.61) (size 15.24 8.89) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid af454206-d75b-4aff-be43-99164678694a)
+    (property "Sheetname" "Main Chip" (at 60.96 53.8984 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "mcu.kicad_sch" (at 60.96 64.0846 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Music32v3"
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995" (page "2"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
 )
