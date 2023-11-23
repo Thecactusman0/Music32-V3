@@ -8,6 +8,23 @@
   )
 
 
+  (sheet (at 111.76 54.61) (size 16.51 8.89) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 3c978059-9f1a-4ff6-9071-c1971133aa54)
+    (property "Sheetname" "USB Stuff" (at 111.76 53.8984 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "usb_stuff.kicad_sch" (at 111.76 64.0846 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Music32v3"
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995" (page "4"))
+      )
+    )
+  )
+
   (sheet (at 86.36 54.61) (size 13.97 8.89) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))

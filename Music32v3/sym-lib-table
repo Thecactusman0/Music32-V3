@@ -1,4 +1,6 @@
 (sym_lib_table
   (version 7)
   (lib (name "Encoder_hollow")(type "KiCad")(uri "${KIPRJMOD}/Symbols/2023-11-07_08-46-27.kicad_sym")(options "")(descr ""))
+  (lib (name "TP4057")(type "KiCad")(uri "${KIPRJMOD}/Symbols/TP4057.kicad_sym")(options "")(descr ""))
+  (lib (name "GL823")(type "KiCad")(uri "${KIPRJMOD}/Symbols/GL823.kicad_sym")(options "")(descr ""))
 )
