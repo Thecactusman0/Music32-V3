@@ -512,6 +512,10 @@
     (stroke (width 0) (type default))
     (uuid 23c6080b-0fed-4887-9cc4-82f3ec61a95a)
   )
+  (wire (pts (xy 97.79 106.68) (xy 95.25 106.68))
+    (stroke (width 0) (type default))
+    (uuid 31362193-e963-4f0d-8ba8-207f76093179)
+  )
   (wire (pts (xy 115.57 69.85) (xy 115.57 71.12))
     (stroke (width 0) (type default))
     (uuid 7be24fbb-b233-4308-b972-124e68770b0f)
@@ -535,6 +539,42 @@
   (wire (pts (xy 115.57 71.12) (xy 121.92 71.12))
     (stroke (width 0) (type default))
     (uuid fb90eeb3-7e8d-4dc2-aa6b-5b6807e19d9a)
+  )
+
+  (global_label "TXD" (shape passive) (at 121.92 101.6 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 17c656db-07a7-4e88-957e-c159fe938d47)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 116.6784 101.6 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "SD_DETECT" (shape passive) (at 90.17 97.79 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 37ad101c-5eb8-470e-9de1-6517ae7055be)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 78.1552 97.79 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "SD_SELECT" (shape passive) (at 95.25 106.68 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 5a5590ac-b02f-416b-b0fe-a9e1d0c602e7)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 83.2352 106.68 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "SD_PWR_EN" (shape passive) (at 97.79 100.33 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid a741e4aa-b61d-4239-92e2-621e9e421320)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 85.1099 100.33 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "RXD" (shape passive) (at 121.92 99.06 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid bea52995-4289-4e64-81cc-deb73490efdd)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 116.376 99.06 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 107.95 71.12 0) (unit 1)
@@ -663,6 +703,83 @@
     )
   )
 
+  (symbol (lib_id "Device:R_Small") (at 97.79 109.22 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 581d316c-a16d-43a9-94b3-e0e2f6c3550e)
+    (property "Reference" "R23" (at 93.98 105.41 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "1M" (at 93.472 107.95 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 97.79 109.22 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 97.79 109.22 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MPN_LCSC" "1" (at 97.79 109.22 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Price_LCSC" "0.0005" (at 97.79 109.22 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid eb694050-3425-4459-b822-58fab7f84781))
+    (pin "2" (uuid 65cdb155-eb93-420f-bba7-f57c502867ab))
+    (instances
+      (project "Power"
+        (path "/1288f273-4ee1-44e8-a86c-2adc0358dc71"
+          (reference "R23") (unit 1)
+        )
+      )
+      (project "Music_32_V2"
+        (path "/14681cc8-ddd4-43ff-b571-daca84d76d6b/4963a591-4c7d-4c5c-bcea-2e6cea395856"
+          (reference "R23") (unit 1)
+        )
+        (path "/14681cc8-ddd4-43ff-b571-daca84d76d6b/386f7fcb-de3c-43a3-99bd-dcf77f99c217"
+          (reference "R31") (unit 1)
+        )
+      )
+      (project "Music32v3"
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995"
+          (reference "R13") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/4998783d-7055-40b0-9979-647930a37834"
+          (reference "R13") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
+          (reference "R14") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/af454206-d75b-4aff-be43-99164678694a"
+          (reference "R15") (unit 1)
+        )
+      )
+      (project "Phone"
+        (path "/9a44bf40-ccf4-4ff9-bb89-c8bc2c0cf19f/08dec41e-a7ac-46dd-ad42-4ddeee026110/46f942c4-bdd7-445d-bd75-6b4493769f4c"
+          (reference "R?") (unit 1)
+        )
+      )
+      (project "Ipod"
+        (path "/c4cf9ad0-abea-4c32-bb0b-367e5261d002"
+          (reference "R?") (unit 1)
+        )
+        (path "/c4cf9ad0-abea-4c32-bb0b-367e5261d002/683020cc-3f85-458f-8fb0-f668196e1562"
+          (reference "R22") (unit 1)
+        )
+      )
+      (project "power"
+        (path "/c90b3fe4-1e97-415b-a0f6-be34dcca7903"
+          (reference "R?") (unit 1)
+        )
+      )
+      (project "Power"
+        (path "/e4f8ce38-95ca-4021-bdd0-de4735b761e8"
+          (reference "R?") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 162.56 124.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5f4df638-7b68-478e-b105-a92585f7f472)
@@ -708,6 +825,31 @@
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/af454206-d75b-4aff-be43-99164678694a"
           (reference "#PWR05") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 97.79 111.76 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 6682efb9-383e-4b0b-a3ee-5f130a95a42c)
+    (property "Reference" "#PWR076" (at 97.79 118.11 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 97.79 115.705 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 97.79 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 97.79 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 80be52a9-9f16-43a8-8acc-0ce62cf6b4fd))
+    (instances
+      (project "Music32v3"
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/af454206-d75b-4aff-be43-99164678694a"
+          (reference "#PWR076") (unit 1)
         )
       )
     )

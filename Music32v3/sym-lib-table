@@ -3,4 +3,8 @@
   (lib (name "Encoder_hollow")(type "KiCad")(uri "${KIPRJMOD}/Symbols/2023-11-07_08-46-27.kicad_sym")(options "")(descr ""))
   (lib (name "TP4057")(type "KiCad")(uri "${KIPRJMOD}/Symbols/TP4057.kicad_sym")(options "")(descr ""))
   (lib (name "GL823")(type "KiCad")(uri "${KIPRJMOD}/Symbols/GL823.kicad_sym")(options "")(descr ""))
+  (lib (name "gl823")(type "KiCad")(uri "${KIPRJMOD}/Symbols/gl823.kicad_sym")(options "")(descr ""))
+  (lib (name "sl2-1s")(type "KiCad")(uri "${KIPRJMOD}/Symbols/sl2-1s.kicad_sym")(options "")(descr ""))
+  (lib (name "sn74lvc1g3157")(type "KiCad")(uri "${KIPRJMOD}/Symbols/sn74lvc1g3157.kicad_sym")(options "")(descr ""))
+  (lib (name "ch340x")(type "KiCad")(uri "${KIPRJMOD}/Symbols/ch340x.kicad_sym")(options "")(descr ""))
 )
