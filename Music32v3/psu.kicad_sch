@@ -2109,6 +2109,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 7c6d56dd-83fc-4e30-bc19-805bc63e5503)
   )
+  (label "VIN" (at 105.41 115.57 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid ea2fff3d-53ee-4c93-86fa-e54a7ff876e5)
+  )
 
   (global_label "D-" (shape passive) (at 85.09 50.8 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))

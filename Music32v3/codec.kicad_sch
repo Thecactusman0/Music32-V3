@@ -507,11 +507,11 @@
         )
       )
     )
-    (symbol "power:+3.3V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+    (symbol "power:+3V3" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Value" "+3.3V" (at 0 3.556 0)
+      (property "Value" "+3V3" (at 0 3.556 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (at 0 0 0)
@@ -523,10 +523,10 @@
       (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0)
+      (property "ki_description" "Power symbol creates a global label with name \"+3V3\"" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "+3.3V_0_1"
+      (symbol "+3V3_0_1"
         (polyline
           (pts
             (xy -0.762 1.27)
@@ -552,9 +552,9 @@
           (fill (type none))
         )
       )
-      (symbol "+3.3V_1_1"
+      (symbol "+3V3_1_1"
         (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+3.3V" (effects (font (size 1.27 1.27))))
+          (name "+3V3" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
       )
@@ -620,7 +620,7 @@
     (uuid 559acaf0-f540-4c11-9c9e-3bab9d1378b6)
   )
   (junction (at 96.52 39.37) (diameter 0) (color 0 0 0 0)
-    (uuid 588fcfac-f9c3-4b13-8d89-4b1df8a6f94e)
+    (uuid 5de994ea-90c3-451b-b528-3d162cd57186)
   )
   (junction (at 127 39.37) (diameter 0) (color 0 0 0 0)
     (uuid 627750b4-245c-45fd-95af-12e77fa0ff0b)
@@ -1355,6 +1355,34 @@
     )
   )
 
+  (symbol (lib_id "power:+3V3") (at 185.42 73.66 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 1a3d7bd1-d2a1-4b69-ba19-f8ac152f19f2)
+    (property "Reference" "#PWR011" (at 185.42 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3V3" (at 185.42 69.715 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 185.42 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 185.42 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 830d2731-33ed-4ba8-9bae-cfeda0b656a5))
+    (instances
+      (project "Music32v3"
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/4998783d-7055-40b0-9979-647930a37834"
+          (reference "#PWR011") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
+          (reference "#PWR092") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:C_Small") (at 147.32 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1dede1eb-ffd3-4011-a47f-38eb127fe1ac)
@@ -1575,52 +1603,6 @@
     )
   )
 
-  (symbol (lib_id "power:+3.3V") (at 185.42 73.66 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 3217dfdb-3785-4e0f-abba-0bd8b83a9c50)
-    (property "Reference" "#PWR041" (at 185.42 77.47 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3.3V" (at 185.42 69.85 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 185.42 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 185.42 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2b42376d-3090-461e-a95a-bdc37b16778e))
-    (instances
-      (project "Music_32_V2"
-        (path "/14681cc8-ddd4-43ff-b571-daca84d76d6b/386f7fcb-de3c-43a3-99bd-dcf77f99c217"
-          (reference "#PWR041") (unit 1)
-        )
-      )
-      (project "Audio test board"
-        (path "/20b27d83-997e-4e2f-816d-b30d828687eb"
-          (reference "#PWR?") (unit 1)
-        )
-      )
-      (project "Music32v3"
-        (path "/492e826b-8900-4c12-8604-1c812b2e1995"
-          (reference "#PWR099") (unit 1)
-        )
-        (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "#PWR092") (unit 1)
-        )
-      )
-      (project "Ipod"
-        (path "/c4cf9ad0-abea-4c32-bb0b-367e5261d002"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/c4cf9ad0-abea-4c32-bb0b-367e5261d002/5d3aff9d-fc6a-43d3-b155-90242dcdd40f"
-          (reference "#PWR035") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:Microphone") (at 203.2 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 33296f1b-1361-4334-a2aa-2bbcdfe0cde9)
@@ -1710,52 +1692,6 @@
         )
         (path "/c4cf9ad0-abea-4c32-bb0b-367e5261d002/5d3aff9d-fc6a-43d3-b155-90242dcdd40f"
           (reference "R13") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3.3V") (at 96.52 39.37 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 3c0c049b-460c-421d-b6cd-28f98ab56706)
-    (property "Reference" "#PWR029" (at 96.52 43.18 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3.3V" (at 96.52 35.56 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 96.52 39.37 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 96.52 39.37 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 362e5438-ff0d-4778-a8bd-2046a03d11fe))
-    (instances
-      (project "Music_32_V2"
-        (path "/14681cc8-ddd4-43ff-b571-daca84d76d6b/386f7fcb-de3c-43a3-99bd-dcf77f99c217"
-          (reference "#PWR029") (unit 1)
-        )
-      )
-      (project "Audio test board"
-        (path "/20b27d83-997e-4e2f-816d-b30d828687eb"
-          (reference "#PWR?") (unit 1)
-        )
-      )
-      (project "Music32v3"
-        (path "/492e826b-8900-4c12-8604-1c812b2e1995"
-          (reference "#PWR087") (unit 1)
-        )
-        (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "#PWR080") (unit 1)
-        )
-      )
-      (project "Ipod"
-        (path "/c4cf9ad0-abea-4c32-bb0b-367e5261d002"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/c4cf9ad0-abea-4c32-bb0b-367e5261d002/5d3aff9d-fc6a-43d3-b155-90242dcdd40f"
-          (reference "#PWR023") (unit 1)
         )
       )
     )
@@ -1925,52 +1861,6 @@
         )
         (path "/c4cf9ad0-abea-4c32-bb0b-367e5261d002/5d3aff9d-fc6a-43d3-b155-90242dcdd40f"
           (reference "#PWR032") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3.3V") (at 171.45 114.3 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 5c812523-df31-4896-bc21-535fcd685e6d)
-    (property "Reference" "#PWR040" (at 171.45 118.11 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3.3V" (at 171.45 110.49 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 171.45 114.3 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 171.45 114.3 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e7b5b192-af27-4916-8542-31dfa8f7ccef))
-    (instances
-      (project "Music_32_V2"
-        (path "/14681cc8-ddd4-43ff-b571-daca84d76d6b/386f7fcb-de3c-43a3-99bd-dcf77f99c217"
-          (reference "#PWR040") (unit 1)
-        )
-      )
-      (project "Audio test board"
-        (path "/20b27d83-997e-4e2f-816d-b30d828687eb"
-          (reference "#PWR?") (unit 1)
-        )
-      )
-      (project "Music32v3"
-        (path "/492e826b-8900-4c12-8604-1c812b2e1995"
-          (reference "#PWR098") (unit 1)
-        )
-        (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "#PWR091") (unit 1)
-        )
-      )
-      (project "Ipod"
-        (path "/c4cf9ad0-abea-4c32-bb0b-367e5261d002"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/c4cf9ad0-abea-4c32-bb0b-367e5261d002/5d3aff9d-fc6a-43d3-b155-90242dcdd40f"
-          (reference "#PWR034") (unit 1)
         )
       )
     )
@@ -2661,6 +2551,34 @@
     )
   )
 
+  (symbol (lib_id "power:+3V3") (at 96.52 39.37 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid b7f2d6c0-a906-4870-8a35-9a9fb77f3c69)
+    (property "Reference" "#PWR011" (at 96.52 43.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3V3" (at 96.52 35.425 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 96.52 39.37 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 96.52 39.37 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid ab4ee32b-c600-43fe-adb0-7c3b9bea9612))
+    (instances
+      (project "Music32v3"
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/4998783d-7055-40b0-9979-647930a37834"
+          (reference "#PWR011") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
+          (reference "#PWR080") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 134.62 44.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ba8cf766-23d4-449d-87c9-db7f0a583c6b)
@@ -3167,6 +3085,34 @@
         )
         (path "/c4cf9ad0-abea-4c32-bb0b-367e5261d002/5d3aff9d-fc6a-43d3-b155-90242dcdd40f"
           (reference "#PWR027") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+3V3") (at 171.45 114.3 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid edb31f19-4dd8-424e-9a3b-ff5fe44305aa)
+    (property "Reference" "#PWR011" (at 171.45 118.11 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3V3" (at 171.45 110.355 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 171.45 114.3 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 171.45 114.3 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 5fc7c363-f0af-4e44-a12c-e53ff1e55cb5))
+    (instances
+      (project "Music32v3"
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/4998783d-7055-40b0-9979-647930a37834"
+          (reference "#PWR011") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
+          (reference "#PWR091") (unit 1)
         )
       )
     )
