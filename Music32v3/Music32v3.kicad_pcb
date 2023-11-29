@@ -969,7 +969,7 @@
 
   (footprint "Music:TS3315A" locked (layer "B.Cu")
     (tstamp 0b712fdf-8772-4561-b0c7-95be6d24ed13)
-    (at 144 126 -90)
+    (at 144 125.5 -90)
     (property "Sheetfile" "Music32v3.kicad_sch")
     (property "Sheetname" "")
     (property "ki_description" "Push button switch, generic, two pins")
@@ -1135,7 +1135,7 @@
 
   (footprint "Music:TS3315A" locked (layer "B.Cu")
     (tstamp 63573277-cdd6-4ac2-bb83-8fa0e7361cc1)
-    (at 130 126 -90)
+    (at 130 125.5 -90)
     (property "Sheetfile" "Music32v3.kicad_sch")
     (property "Sheetname" "")
     (property "ki_description" "Push button switch, generic, two pins")
@@ -1185,7 +1185,7 @@
 
   (footprint "Music:TS3315A" locked (layer "B.Cu")
     (tstamp 97fdece0-0fe9-4448-8cdf-a76f3942f218)
-    (at 130 140 180)
+    (at 130 139.5 180)
     (property "Sheetfile" "Music32v3.kicad_sch")
     (property "Sheetname" "")
     (property "ki_description" "Push button switch, generic, two pins")
@@ -1239,7 +1239,7 @@
 
   (footprint "Music:TS3315A" locked (layer "B.Cu")
     (tstamp aeeaaa60-405b-4fdc-90b8-c179ab329558)
-    (at 116 126 90)
+    (at 116 125.5 90)
     (property "Sheetfile" "Music32v3.kicad_sch")
     (property "Sheetname" "")
     (property "ki_description" "Push button switch, generic, two pins")
@@ -1289,7 +1289,7 @@
 
   (footprint "Music:SRGP400200_ALPS" locked (layer "B.Cu")
     (tstamp d1e2cae1-234a-49dc-be85-6a5a99ad6c36)
-    (at 130 126 90)
+    (at 130 125.5 90)
     (tags "SRGP400200 ")
     (property "Sheetfile" "Music32v3.kicad_sch")
     (property "Sheetname" "")
@@ -1366,7 +1366,7 @@
 
   (footprint "Music:TS3315A" locked (layer "B.Cu")
     (tstamp d7851de0-074f-45f0-91cc-4952a1848726)
-    (at 130 112)
+    (at 130 111.5)
     (property "Sheetfile" "Music32v3.kicad_sch")
     (property "Sheetname" "")
     (property "ki_description" "Push button switch, generic, two pins")
@@ -1414,11 +1414,11 @@
     )
   )
 
-  (gr_circle locked (center 130 126) (end 111 126)
+  (gr_circle locked (center 130 125.5) (end 111 125.5)
     (stroke (width 0.1) (type default)) (fill none) (layer "B.SilkS") (tstamp 0d747f6d-d06c-4869-b3ff-ff4636595e1a))
-  (gr_circle locked (center 130 126) (end 121 126)
+  (gr_circle locked (center 130 125.5) (end 121 125.5)
     (stroke (width 0.1) (type default)) (fill none) (layer "B.SilkS") (tstamp 4cca4fd7-be8d-47e3-bac2-a7ceca4a7bcb))
-  (gr_circle locked (center 130 126) (end 123 126)
+  (gr_circle locked (center 130 125.5) (end 123 125.5)
     (stroke (width 0.1) (type default)) (fill none) (layer "B.SilkS") (tstamp 533ca96e-276f-4a28-8f90-de0ee6a8c3cf))
   (gr_line locked (start 111 93.5) (end 108 93.5)
     (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp 00382229-3b6c-4f53-a364-dba41a422d55))
