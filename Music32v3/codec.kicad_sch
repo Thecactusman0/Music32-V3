@@ -157,6 +157,41 @@
         )
       )
     )
+    (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "TP" (at 0 6.858 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "TestPoint" (at 0 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 5.08 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 5.08 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "test point tp" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "test point" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "Pin* Test*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "TestPoint_0_1"
+        (circle (center 0 3.302) (radius 0.762)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "TestPoint_1_1"
+        (pin passive line (at 0 0 90) (length 2.54)
+          (name "1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Connector_Audio:AudioJack4_SwitchT1" (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 0 11.43 0)
         (effects (font (size 1.27 1.27)))
@@ -607,6 +642,9 @@
   (junction (at 105.41 133.35) (diameter 0) (color 0 0 0 0)
     (uuid 0a3a6191-2667-4924-8c1a-f18528a3a41d)
   )
+  (junction (at 93.98 97.79) (diameter 0) (color 0 0 0 0)
+    (uuid 128ddf20-9e57-451a-833d-35d36000d2e3)
+  )
   (junction (at 163.83 83.82) (diameter 0) (color 0 0 0 0)
     (uuid 1c20f2df-6c58-4fff-8fca-dc16db3e704a)
   )
@@ -628,6 +666,9 @@
   (junction (at 160.02 86.36) (diameter 0) (color 0 0 0 0)
     (uuid 6c9ffd7b-b494-49c4-83d2-6b9912788adb)
   )
+  (junction (at 73.66 82.55) (diameter 0) (color 0 0 0 0)
+    (uuid 76d8d1f9-420f-4bd9-bf69-11f5537bfeed)
+  )
   (junction (at 105.41 39.37) (diameter 0) (color 0 0 0 0)
     (uuid 7bd7d518-b0e7-4ba2-90df-9c3f93a66518)
   )
@@ -640,11 +681,17 @@
   (junction (at 203.2 58.42) (diameter 0) (color 0 0 0 0)
     (uuid 8fdfae2c-3584-4c31-8da8-2753eccb91f4)
   )
+  (junction (at 78.74 86.36) (diameter 0) (color 0 0 0 0)
+    (uuid 9b222047-0fd6-4f40-aa06-75e9da7570b3)
+  )
   (junction (at 203.2 48.26) (diameter 0) (color 0 0 0 0)
     (uuid 9e373e5f-7098-4bc5-bf99-cb8f89540761)
   )
   (junction (at 193.04 30.48) (diameter 0) (color 0 0 0 0)
     (uuid 9f8116ca-21fd-4f49-b498-3e4f83cf2d70)
+  )
+  (junction (at 88.9 93.98) (diameter 0) (color 0 0 0 0)
+    (uuid a2374e87-0a92-43e3-a09f-4cd70a2a5cc7)
   )
   (junction (at 105.41 54.61) (diameter 0) (color 0 0 0 0)
     (uuid b6205f2c-9dc7-45de-951e-441171bbbe5d)
@@ -655,12 +702,19 @@
   (junction (at 147.32 49.53) (diameter 0) (color 0 0 0 0)
     (uuid ed55a5a9-dcf7-4cdc-8c54-07031e899c97)
   )
+  (junction (at 83.82 90.17) (diameter 0) (color 0 0 0 0)
+    (uuid fac6417f-8408-4cb7-9ef3-23e70c487a8b)
+  )
   (junction (at 200.66 93.98) (diameter 0) (color 0 0 0 0)
     (uuid fb3c1e0b-e2a8-4486-9162-e4cbcfef6448)
   )
 
   (no_connect (at 95.25 115.57) (uuid 68baad24-53ca-49e5-8468-7dfc4700e936))
 
+  (wire (pts (xy 93.98 97.79) (xy 95.25 97.79))
+    (stroke (width 0) (type default))
+    (uuid 00a735fa-f778-4d43-b129-c68d4ff345ba)
+  )
   (wire (pts (xy 119.38 39.37) (xy 127 39.37))
     (stroke (width 0) (type default))
     (uuid 01202b60-4c52-40e3-8494-9b9281c5a1f0)
@@ -673,9 +727,21 @@
     (stroke (width 0) (type default))
     (uuid 0673f070-eafb-40aa-ab22-e8dc7c5afcdb)
   )
+  (wire (pts (xy 69.85 90.17) (xy 83.82 90.17))
+    (stroke (width 0) (type default))
+    (uuid 0fbd7b8c-f2c7-4945-a687-e7eaa77a3f3e)
+  )
   (wire (pts (xy 143.51 114.3) (xy 156.21 114.3))
     (stroke (width 0) (type default))
     (uuid 148e8e5a-9d8f-4731-bcba-bbaba1a343a8)
+  )
+  (wire (pts (xy 78.74 86.36) (xy 78.74 100.33))
+    (stroke (width 0) (type default))
+    (uuid 163a253a-9b8b-4d40-a3e0-290e4777d114)
+  )
+  (wire (pts (xy 78.74 86.36) (xy 95.25 86.36))
+    (stroke (width 0) (type default))
+    (uuid 1c049565-b7bb-4c18-afc6-eebb8611c3d7)
   )
   (wire (pts (xy 105.41 39.37) (xy 111.76 39.37))
     (stroke (width 0) (type default))
@@ -684,6 +750,10 @@
   (wire (pts (xy 101.6 130.81) (xy 101.6 133.35))
     (stroke (width 0) (type default))
     (uuid 1c8b97ff-d17f-4dcd-ba5b-a9d1564d2106)
+  )
+  (wire (pts (xy 93.98 97.79) (xy 93.98 100.33))
+    (stroke (width 0) (type default))
+    (uuid 2194f004-cd56-4b2e-841b-3c437573c998)
   )
   (wire (pts (xy 171.45 121.92) (xy 179.07 121.92))
     (stroke (width 0) (type default))
@@ -777,9 +847,17 @@
     (stroke (width 0) (type default))
     (uuid 5795ce1c-1e48-4f18-a795-5a2ab614d741)
   )
+  (wire (pts (xy 69.85 86.36) (xy 78.74 86.36))
+    (stroke (width 0) (type default))
+    (uuid 580cb79f-1593-4197-a56b-5999f60607fa)
+  )
   (wire (pts (xy 156.21 80.01) (xy 160.02 80.01))
     (stroke (width 0) (type default))
     (uuid 5cd492f1-c80f-44d0-bd50-f2fef1e07976)
+  )
+  (wire (pts (xy 73.66 82.55) (xy 73.66 100.33))
+    (stroke (width 0) (type default))
+    (uuid 5e61b8a1-36a9-4726-a735-fb39119c1a8e)
   )
   (wire (pts (xy 119.38 148.59) (xy 121.92 148.59))
     (stroke (width 0) (type default))
@@ -788,6 +866,10 @@
   (wire (pts (xy 105.41 54.61) (xy 111.76 54.61))
     (stroke (width 0) (type default))
     (uuid 614e1871-0772-4773-b85b-7967a2093aad)
+  )
+  (wire (pts (xy 69.85 97.79) (xy 93.98 97.79))
+    (stroke (width 0) (type default))
+    (uuid 62bff8ae-b966-4fad-955c-cbccd611edd3)
   )
   (wire (pts (xy 109.22 133.35) (xy 113.03 133.35))
     (stroke (width 0) (type default))
@@ -804,6 +886,10 @@
   (wire (pts (xy 121.92 156.21) (xy 127 156.21))
     (stroke (width 0) (type default))
     (uuid 70b044fe-710a-4081-b9eb-3ef73c8bd3de)
+  )
+  (wire (pts (xy 73.66 82.55) (xy 95.25 82.55))
+    (stroke (width 0) (type default))
+    (uuid 72f1e37c-f7c9-4491-81e0-5b23885c317e)
   )
   (wire (pts (xy 160.02 86.36) (xy 214.63 86.36))
     (stroke (width 0) (type default))
@@ -849,6 +935,10 @@
     (stroke (width 0) (type default))
     (uuid 90a3bf69-40a4-424b-b052-04a779d3528d)
   )
+  (wire (pts (xy 69.85 93.98) (xy 88.9 93.98))
+    (stroke (width 0) (type default))
+    (uuid 98f3d1dd-ae40-45ab-ac4d-be865255758b)
+  )
   (wire (pts (xy 212.09 88.9) (xy 214.63 88.9))
     (stroke (width 0) (type default))
     (uuid 9a3b88d5-9858-4cb8-8d8a-7ae796695d1e)
@@ -864,6 +954,10 @@
   (wire (pts (xy 163.83 76.2) (xy 156.21 76.2))
     (stroke (width 0) (type default))
     (uuid ae777c14-7bdb-49f3-b8b7-40fa73e4734d)
+  )
+  (wire (pts (xy 88.9 93.98) (xy 95.25 93.98))
+    (stroke (width 0) (type default))
+    (uuid af81fbe3-d45f-4b09-919c-37cf2a1d5cec)
   )
   (wire (pts (xy 151.13 80.01) (xy 143.51 80.01))
     (stroke (width 0) (type default))
@@ -897,6 +991,10 @@
     (stroke (width 0) (type default))
     (uuid ca580b09-abe3-4c60-8c77-d587e7839055)
   )
+  (wire (pts (xy 83.82 90.17) (xy 95.25 90.17))
+    (stroke (width 0) (type default))
+    (uuid cb965dd1-1453-42c6-9adc-c4973ac94245)
+  )
   (wire (pts (xy 212.09 93.98) (xy 214.63 93.98))
     (stroke (width 0) (type default))
     (uuid ccf8e8f5-5af4-459e-80f4-73e5965c9673)
@@ -917,6 +1015,10 @@
     (stroke (width 0) (type default))
     (uuid d3ca3637-1f4b-48d3-8a98-a5d087e19a7d)
   )
+  (wire (pts (xy 88.9 93.98) (xy 88.9 100.33))
+    (stroke (width 0) (type default))
+    (uuid d454a1ac-a532-402c-98d6-2e588cecdef6)
+  )
   (wire (pts (xy 127 39.37) (xy 127 54.61))
     (stroke (width 0) (type default))
     (uuid df1f0d1e-79ac-407e-b8c9-7006d88b133b)
@@ -933,6 +1035,10 @@
     (stroke (width 0) (type default))
     (uuid e92e342a-b8c4-413a-88ae-dfada2eec0a5)
   )
+  (wire (pts (xy 69.85 82.55) (xy 73.66 82.55))
+    (stroke (width 0) (type default))
+    (uuid ea7bfae5-c39d-45b1-8b4e-e41aee59caea)
+  )
   (wire (pts (xy 132.08 140.97) (xy 132.08 156.21))
     (stroke (width 0) (type default))
     (uuid ec80bd63-6921-40cb-8aff-b31bfe8cccf5)
@@ -948,6 +1054,10 @@
   (wire (pts (xy 160.02 99.06) (xy 143.51 99.06))
     (stroke (width 0) (type default))
     (uuid f58552bf-faf7-49f9-a3bf-e12f67d373d5)
+  )
+  (wire (pts (xy 83.82 90.17) (xy 83.82 100.33))
+    (stroke (width 0) (type default))
+    (uuid f7be67cd-d353-4ce4-9438-4a8ce6ecbf8b)
   )
   (wire (pts (xy 113.03 133.35) (xy 113.03 135.89))
     (stroke (width 0) (type default))
@@ -1002,10 +1112,10 @@
     (uuid f3847ce2-c798-4cab-addf-a34e1dbd6479)
   )
 
-  (global_label "LRCK" (shape passive) (at 95.25 93.98 180) (fields_autoplaced)
+  (global_label "LRCK" (shape passive) (at 69.85 93.98 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 14fbd610-97bf-4a1b-9c4e-bd7761f0152b)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 88.6174 93.98 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 63.2174 93.98 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -1016,17 +1126,17 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "SCLK" (shape passive) (at 95.25 86.36 180) (fields_autoplaced)
+  (global_label "SCLK" (shape passive) (at 69.85 86.36 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 3e798b3c-cfcd-4b00-b2e8-8930404c85fe)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 88.6779 86.36 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 63.2779 86.36 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "SDIN" (shape passive) (at 95.25 90.17 180) (fields_autoplaced)
+  (global_label "SDIN" (shape passive) (at 69.85 90.17 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 41c9d84f-4b4e-458e-8c87-bd1d18d1159f)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 89.0407 90.17 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 63.6407 90.17 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -1058,18 +1168,55 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "SDOUT" (shape passive) (at 95.25 97.79 180) (fields_autoplaced)
+  (global_label "MCLK_TXD" (shape passive) (at 69.85 82.55 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
-    (uuid bbdbffd7-ab90-403f-8aa9-21969e0fe069)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 87.3474 97.79 0)
+    (uuid bbc78955-0720-4aa8-892a-caffd9c6376b)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 58.6213 82.55 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "MCLK" (shape passive) (at 95.25 82.55 180) (fields_autoplaced)
+  (global_label "SDOUT" (shape passive) (at 69.85 97.79 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
-    (uuid fac54553-103c-4da0-a192-91f488c09ca8)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 88.436 82.55 0)
+    (uuid bbdbffd7-ab90-403f-8aa9-21969e0fe069)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 61.9474 97.79 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 93.98 100.33 0) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 03ac1a0e-5b30-4352-9f12-072a9c49c1f6)
+    (property "Reference" "TP6" (at 96.52 106.68 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "TestPoint" (at 91.44 101.727 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 99.06 100.33 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 99.06 100.33 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid d03fc55d-e9c0-4a1d-9b1b-1e6d1bd34db8))
+    (instances
+      (project "Music32v3"
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995"
+          (reference "TP6") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/af454206-d75b-4aff-be43-99164678694a"
+          (reference "TP14") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/4998783d-7055-40b0-9979-647930a37834"
+          (reference "TP19") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
+          (reference "TP28") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
+          (reference "TP35") (unit 1)
+        )
+      )
     )
   )
 
@@ -1106,7 +1253,7 @@
           (reference "R28") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "R33") (unit 1)
+          (reference "R45") (unit 1)
         )
       )
       (project "Ipod"
@@ -1152,7 +1299,7 @@
           (reference "#PWR079") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "#PWR082") (unit 1)
+          (reference "#PWR0100") (unit 1)
         )
       )
       (project "Ipod"
@@ -1202,7 +1349,7 @@
           (reference "J2") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "J2") (unit 1)
+          (reference "J3") (unit 1)
         )
       )
       (project "Ipod"
@@ -1249,7 +1396,7 @@
           (reference "C52") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "C45") (unit 1)
+          (reference "C48") (unit 1)
         )
       )
       (project "Ipod"
@@ -1295,7 +1442,7 @@
           (reference "#PWR0100") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "#PWR093") (unit 1)
+          (reference "#PWR0111") (unit 1)
         )
       )
       (project "Ipod"
@@ -1341,7 +1488,7 @@
           (reference "#PWR089") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "#PWR083") (unit 1)
+          (reference "#PWR0101") (unit 1)
         )
       )
       (project "Ipod"
@@ -1377,7 +1524,7 @@
           (reference "#PWR011") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "#PWR092") (unit 1)
+          (reference "#PWR0110") (unit 1)
         )
       )
     )
@@ -1409,7 +1556,44 @@
           (reference "C34") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "C39") (unit 1)
+          (reference "C42") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 83.82 100.33 0) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 1dfb1524-e2fd-4966-ab39-5ed9c57c7373)
+    (property "Reference" "TP6" (at 86.36 106.68 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "TestPoint" (at 81.28 101.727 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 88.9 100.33 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 88.9 100.33 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 33838cf9-3772-46a0-806d-8fcec1c1255b))
+    (instances
+      (project "Music32v3"
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995"
+          (reference "TP6") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/af454206-d75b-4aff-be43-99164678694a"
+          (reference "TP14") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/4998783d-7055-40b0-9979-647930a37834"
+          (reference "TP19") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
+          (reference "TP28") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
+          (reference "TP33") (unit 1)
         )
       )
     )
@@ -1448,7 +1632,7 @@
           (reference "C27") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "C34") (unit 1)
+          (reference "C37") (unit 1)
         )
       )
       (project "Ipod"
@@ -1495,7 +1679,7 @@
           (reference "C48") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "C41") (unit 1)
+          (reference "C44") (unit 1)
         )
       )
       (project "Ipod"
@@ -1542,7 +1726,7 @@
           (reference "R26") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "R27") (unit 1)
+          (reference "R39") (unit 1)
         )
       )
       (project "Ipod"
@@ -1589,7 +1773,7 @@
           (reference "R30") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "R31") (unit 1)
+          (reference "R43") (unit 1)
         )
       )
       (project "Ipod"
@@ -1683,7 +1867,7 @@
           (reference "R25") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "R26") (unit 1)
+          (reference "R38") (unit 1)
         )
       )
       (project "Ipod"
@@ -1720,7 +1904,7 @@
           (reference "R33") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "R24") (unit 1)
+          (reference "R36") (unit 1)
         )
       )
     )
@@ -1759,7 +1943,7 @@
           (reference "R32") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "R29") (unit 1)
+          (reference "R41") (unit 1)
         )
       )
       (project "Ipod"
@@ -1806,7 +1990,7 @@
           (reference "R23") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "R23") (unit 1)
+          (reference "R35") (unit 1)
         )
       )
       (project "Ipod"
@@ -1852,7 +2036,7 @@
           (reference "#PWR078") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "#PWR094") (unit 1)
+          (reference "#PWR0112") (unit 1)
         )
       )
       (project "Ipod"
@@ -1899,7 +2083,7 @@
           (reference "C50") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "C43") (unit 1)
+          (reference "C46") (unit 1)
         )
       )
       (project "Ipod"
@@ -1908,6 +2092,43 @@
         )
         (path "/c4cf9ad0-abea-4c32-bb0b-367e5261d002/5d3aff9d-fc6a-43d3-b155-90242dcdd40f"
           (reference "C21") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 88.9 100.33 0) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 66e2a37a-d367-4863-b165-c3cc867b0d73)
+    (property "Reference" "TP6" (at 91.44 106.68 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "TestPoint" (at 86.36 101.727 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 93.98 100.33 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 93.98 100.33 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 01c4542e-5f52-4aa3-a5cc-79b904d1a239))
+    (instances
+      (project "Music32v3"
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995"
+          (reference "TP6") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/af454206-d75b-4aff-be43-99164678694a"
+          (reference "TP14") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/4998783d-7055-40b0-9979-647930a37834"
+          (reference "TP19") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
+          (reference "TP28") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
+          (reference "TP34") (unit 1)
         )
       )
     )
@@ -1946,7 +2167,7 @@
           (reference "C42") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "C35") (unit 1)
+          (reference "C38") (unit 1)
         )
       )
       (project "Ipod"
@@ -1993,7 +2214,7 @@
           (reference "C41") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "C27") (unit 1)
+          (reference "C36") (unit 1)
         )
       )
       (project "Ipod"
@@ -2039,7 +2260,7 @@
           (reference "#PWR086") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "#PWR079") (unit 1)
+          (reference "#PWR097") (unit 1)
         )
       )
       (project "Ipod"
@@ -2085,7 +2306,7 @@
           (reference "#PWR097") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "#PWR090") (unit 1)
+          (reference "#PWR0108") (unit 1)
         )
       )
       (project "Ipod"
@@ -2132,7 +2353,7 @@
           (reference "C53") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "C46") (unit 1)
+          (reference "C49") (unit 1)
         )
       )
       (project "Ipod"
@@ -2210,7 +2431,7 @@
           (reference "U23") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "U21") (unit 1)
+          (reference "U23") (unit 1)
         )
       )
       (project "Ipod"
@@ -2257,7 +2478,7 @@
           (reference "C54") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "C47") (unit 1)
+          (reference "C50") (unit 1)
         )
       )
       (project "Ipod"
@@ -2304,7 +2525,7 @@
           (reference "C44") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "C37") (unit 1)
+          (reference "C40") (unit 1)
         )
       )
       (project "Ipod"
@@ -2351,7 +2572,7 @@
           (reference "R29") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "R30") (unit 1)
+          (reference "R42") (unit 1)
         )
       )
       (project "Ipod"
@@ -2398,7 +2619,7 @@
           (reference "R27") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "R28") (unit 1)
+          (reference "R40") (unit 1)
         )
       )
       (project "Ipod"
@@ -2444,7 +2665,7 @@
           (reference "#PWR088") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "#PWR081") (unit 1)
+          (reference "#PWR099") (unit 1)
         )
       )
       (project "Ipod"
@@ -2453,6 +2674,80 @@
         )
         (path "/c4cf9ad0-abea-4c32-bb0b-367e5261d002/5d3aff9d-fc6a-43d3-b155-90242dcdd40f"
           (reference "#PWR024") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 73.66 100.33 0) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 9903d550-0f33-4328-b503-7b7e81ee2f29)
+    (property "Reference" "TP6" (at 76.2 106.68 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "TestPoint" (at 71.12 101.727 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 78.74 100.33 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 78.74 100.33 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid a624f10b-bc57-4140-9563-4cb48aa5ad50))
+    (instances
+      (project "Music32v3"
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995"
+          (reference "TP6") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/af454206-d75b-4aff-be43-99164678694a"
+          (reference "TP14") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/4998783d-7055-40b0-9979-647930a37834"
+          (reference "TP19") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
+          (reference "TP28") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
+          (reference "TP31") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 171.45 121.92 0) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid a3c7fdd2-7e92-40e4-92c6-759aa7bd291e)
+    (property "Reference" "TP6" (at 173.99 128.27 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "TestPoint" (at 168.91 123.317 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (at 176.53 121.92 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 176.53 121.92 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 1d30aabc-cf39-4ca4-9a3e-e795a7b898ec))
+    (instances
+      (project "Music32v3"
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995"
+          (reference "TP6") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/af454206-d75b-4aff-be43-99164678694a"
+          (reference "TP14") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/4998783d-7055-40b0-9979-647930a37834"
+          (reference "TP19") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
+          (reference "TP28") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
+          (reference "TP36") (unit 1)
         )
       )
     )
@@ -2490,7 +2785,7 @@
           (reference "#PWR094") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "#PWR087") (unit 1)
+          (reference "#PWR0105") (unit 1)
         )
       )
       (project "Ipod"
@@ -2537,7 +2832,7 @@
           (reference "R24") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "R25") (unit 1)
+          (reference "R37") (unit 1)
         )
       )
       (project "Ipod"
@@ -2573,7 +2868,7 @@
           (reference "#PWR011") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "#PWR080") (unit 1)
+          (reference "#PWR098") (unit 1)
         )
       )
     )
@@ -2611,7 +2906,7 @@
           (reference "#PWR093") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "#PWR086") (unit 1)
+          (reference "#PWR0104") (unit 1)
         )
       )
       (project "Ipod"
@@ -2658,7 +2953,7 @@
           (reference "C51") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "C44") (unit 1)
+          (reference "C47") (unit 1)
         )
       )
       (project "Ipod"
@@ -2705,7 +3000,7 @@
           (reference "R31") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "R32") (unit 1)
+          (reference "R44") (unit 1)
         )
       )
       (project "Ipod"
@@ -2751,7 +3046,7 @@
           (reference "#PWR096") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "#PWR089") (unit 1)
+          (reference "#PWR0107") (unit 1)
         )
       )
       (project "Ipod"
@@ -2797,7 +3092,7 @@
           (reference "#PWR090") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "#PWR084") (unit 1)
+          (reference "#PWR0102") (unit 1)
         )
       )
       (project "Ipod"
@@ -2843,7 +3138,7 @@
           (reference "#PWR095") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "#PWR088") (unit 1)
+          (reference "#PWR0106") (unit 1)
         )
       )
       (project "Ipod"
@@ -2890,7 +3185,7 @@
           (reference "C49") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "C42") (unit 1)
+          (reference "C45") (unit 1)
         )
       )
       (project "Ipod"
@@ -2937,7 +3232,7 @@
           (reference "C47") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "C40") (unit 1)
+          (reference "C43") (unit 1)
         )
       )
       (project "Ipod"
@@ -2983,7 +3278,7 @@
           (reference "#PWR0101") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "#PWR095") (unit 1)
+          (reference "#PWR0113") (unit 1)
         )
       )
       (project "Ipod"
@@ -2992,6 +3287,43 @@
         )
         (path "/c4cf9ad0-abea-4c32-bb0b-367e5261d002/5d3aff9d-fc6a-43d3-b155-90242dcdd40f"
           (reference "#PWR037") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 78.74 100.33 0) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid e2ea63c6-bb00-4d38-afcf-68df2a0abad0)
+    (property "Reference" "TP6" (at 81.28 106.68 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "TestPoint" (at 76.2 101.727 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (at 83.82 100.33 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 83.82 100.33 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 23bfd49c-7b37-4106-b1d5-c8c4de7de2a6))
+    (instances
+      (project "Music32v3"
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995"
+          (reference "TP6") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/af454206-d75b-4aff-be43-99164678694a"
+          (reference "TP14") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/4998783d-7055-40b0-9979-647930a37834"
+          (reference "TP19") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
+          (reference "TP28") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
+          (reference "TP32") (unit 1)
         )
       )
     )
@@ -3030,7 +3362,7 @@
           (reference "C43") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "C36") (unit 1)
+          (reference "C39") (unit 1)
         )
       )
       (project "Ipod"
@@ -3076,7 +3408,7 @@
           (reference "#PWR091") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "#PWR085") (unit 1)
+          (reference "#PWR0103") (unit 1)
         )
       )
       (project "Ipod"
@@ -3112,7 +3444,7 @@
           (reference "#PWR011") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "#PWR091") (unit 1)
+          (reference "#PWR0109") (unit 1)
         )
       )
     )
@@ -3151,7 +3483,7 @@
           (reference "C45") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/d3a81cb8-516c-4320-9b3b-4dd6f93f2457"
-          (reference "C38") (unit 1)
+          (reference "C41") (unit 1)
         )
       )
       (project "Ipod"

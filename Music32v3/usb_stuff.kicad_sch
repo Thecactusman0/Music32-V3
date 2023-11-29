@@ -133,6 +133,41 @@
         )
       )
     )
+    (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "TP" (at 0 6.858 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "TestPoint" (at 0 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 5.08 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 5.08 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "test point tp" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "test point" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "Pin* Test*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "TestPoint_0_1"
+        (circle (center 0 3.302) (radius 0.762)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "TestPoint_1_1"
+        (pin passive line (at 0 0 90) (length 2.54)
+          (name "1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Device:C_Small" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
       (property "Reference" "C" (at 0.254 1.778 0)
         (effects (font (size 1.27 1.27)) (justify left))
@@ -1146,58 +1181,6 @@
         )
       )
     )
-    (symbol "power:+3.3V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "+3.3V" (at 0 3.556 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "+3.3V_0_1"
-        (polyline
-          (pts
-            (xy -0.762 1.27)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0.762 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "+3.3V_1_1"
-        (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+3.3V" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "power:+3V3" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -1376,13 +1359,16 @@
     )
   )
 
+  (junction (at 217.17 66.04) (diameter 0) (color 0 0 0 0)
+    (uuid 0abfa6a2-f529-4dfe-9b9e-d09e2603b73c)
+  )
   (junction (at 88.9 160.02) (diameter 0) (color 0 0 0 0)
     (uuid 0ee70731-33df-428b-8494-49ac150de131)
   )
   (junction (at 36.83 62.23) (diameter 0) (color 0 0 0 0)
     (uuid 102a4c9b-9430-4c79-a7cf-c25bc740c375)
   )
-  (junction (at 146.05 72.39) (diameter 0) (color 0 0 0 0)
+  (junction (at 137.16 72.39) (diameter 0) (color 0 0 0 0)
     (uuid 168bb4b6-4d57-42de-a45d-138411b65cf8)
   )
   (junction (at 36.83 59.69) (diameter 0) (color 0 0 0 0)
@@ -1394,7 +1380,7 @@
   (junction (at 140.97 124.46) (diameter 0) (color 0 0 0 0)
     (uuid 2a752701-fb27-4aac-afff-cb949d5316d5)
   )
-  (junction (at 121.92 27.94) (diameter 0) (color 0 0 0 0)
+  (junction (at 113.03 27.94) (diameter 0) (color 0 0 0 0)
     (uuid 38dc735d-95ce-43a8-9bd6-05b50ad9968c)
   )
   (junction (at 24.13 59.69) (diameter 0) (color 0 0 0 0)
@@ -1427,13 +1413,13 @@
   (junction (at 193.04 40.64) (diameter 0) (color 0 0 0 0)
     (uuid 91a47606-29f6-433b-b9f5-3e81412456fa)
   )
-  (junction (at 133.35 72.39) (diameter 0) (color 0 0 0 0)
+  (junction (at 124.46 72.39) (diameter 0) (color 0 0 0 0)
     (uuid 9e9a9246-f3ec-46e9-abba-52be0bae6133)
   )
   (junction (at 213.36 135.89) (diameter 0) (color 0 0 0 0)
     (uuid 9f35af57-ee2e-44d4-b50f-0f116a5f6a19)
   )
-  (junction (at 156.21 67.31) (diameter 0) (color 0 0 0 0)
+  (junction (at 147.32 67.31) (diameter 0) (color 0 0 0 0)
     (uuid a082a0c9-154f-4288-8535-813454de9653)
   )
   (junction (at 201.93 135.89) (diameter 0) (color 0 0 0 0)
@@ -1463,16 +1449,23 @@
   (junction (at 250.19 143.51) (diameter 0) (color 0 0 0 0)
     (uuid e31e2c36-92a0-4995-8c04-6fa28dd2a38c)
   )
-  (junction (at 156.21 63.5) (diameter 0) (color 0 0 0 0)
+  (junction (at 147.32 63.5) (diameter 0) (color 0 0 0 0)
     (uuid e86ff6d2-6055-413a-99cd-e7fd1812dddb)
   )
   (junction (at 97.79 124.46) (diameter 0) (color 0 0 0 0)
     (uuid ed336154-c6f9-4bd1-adab-bcf8b194411f)
   )
+  (junction (at 200.66 49.53) (diameter 0) (color 0 0 0 0)
+    (uuid f0c46bb4-c1d8-474c-a26a-38d1df440c4f)
+  )
 
   (no_connect (at 52.07 165.1) (uuid 056ea508-9359-4ce3-8f50-fd7a5927078a))
   (no_connect (at 52.07 124.46) (uuid 2ce7a93a-e256-436a-bf64-2cbf097f2298))
-  (no_connect (at 156.21 27.94) (uuid 3dbca496-b98b-4e33-b3dd-829475665d19))
+  (no_connect (at 147.32 27.94) (uuid 3dbca496-b98b-4e33-b3dd-829475665d19))
+  (no_connect (at 74.93 40.64) (uuid 6ff28ce9-acae-4bc4-b9cb-e602cf3ba082))
+  (no_connect (at 74.93 35.56) (uuid 8d356811-3f04-4a90-bcb9-90de6276c66e))
+  (no_connect (at 74.93 33.02) (uuid a38a3fdd-2e52-4128-8069-beabaadf26bb))
+  (no_connect (at 74.93 43.18) (uuid a9e79c0d-ec6d-4f04-9bf4-7496035eb546))
 
   (wire (pts (xy 97.79 124.46) (xy 99.06 124.46))
     (stroke (width 0) (type default))
@@ -1486,7 +1479,7 @@
     (stroke (width 0) (type default))
     (uuid 07c83044-1543-4bc5-951b-46565900a546)
   )
-  (wire (pts (xy 129.54 72.39) (xy 133.35 72.39))
+  (wire (pts (xy 120.65 72.39) (xy 124.46 72.39))
     (stroke (width 0) (type default))
     (uuid 091cc1c5-d7e1-4bcb-852c-ac3c8a0f2ce1)
   )
@@ -1510,7 +1503,7 @@
     (stroke (width 0) (type default))
     (uuid 121c6ad2-7df6-46d5-a33e-8a60a34e2089)
   )
-  (wire (pts (xy 156.21 59.69) (xy 156.21 63.5))
+  (wire (pts (xy 147.32 59.69) (xy 147.32 63.5))
     (stroke (width 0) (type default))
     (uuid 13ead522-465c-465a-91fe-a6f52846aaf3)
   )
@@ -1518,7 +1511,7 @@
     (stroke (width 0) (type default))
     (uuid 1850b21f-6376-480f-b69d-d6560abe322c)
   )
-  (wire (pts (xy 156.21 63.5) (xy 156.21 67.31))
+  (wire (pts (xy 147.32 63.5) (xy 147.32 67.31))
     (stroke (width 0) (type default))
     (uuid 1b475331-689c-408e-a6bf-09f59b2e15c8)
   )
@@ -1530,7 +1523,7 @@
     (stroke (width 0) (type default))
     (uuid 1debb2e8-d058-4f88-a3f0-56455836df6f)
   )
-  (wire (pts (xy 200.66 45.72) (xy 200.66 50.8))
+  (wire (pts (xy 200.66 45.72) (xy 200.66 49.53))
     (stroke (width 0) (type default))
     (uuid 228a96da-c6a9-48d9-a967-88eb3be0eefc)
   )
@@ -1542,7 +1535,7 @@
     (stroke (width 0) (type default))
     (uuid 283c315d-d359-4cb3-a0d4-81b34d9a4c56)
   )
-  (wire (pts (xy 114.3 27.94) (xy 121.92 27.94))
+  (wire (pts (xy 105.41 27.94) (xy 113.03 27.94))
     (stroke (width 0) (type default))
     (uuid 283c85e2-7267-4b17-a00b-3ec18cd73ce2)
   )
@@ -1586,11 +1579,11 @@
     (stroke (width 0) (type default))
     (uuid 3c276829-baef-498f-bacc-39b73588742e)
   )
-  (wire (pts (xy 133.35 72.39) (xy 133.35 74.93))
+  (wire (pts (xy 124.46 72.39) (xy 124.46 74.93))
     (stroke (width 0) (type default))
     (uuid 4762ee48-95d3-4e83-8881-d91e34ed2d63)
   )
-  (wire (pts (xy 133.35 81.28) (xy 133.35 80.01))
+  (wire (pts (xy 124.46 81.28) (xy 124.46 80.01))
     (stroke (width 0) (type default))
     (uuid 4b1f2001-e34f-4606-86de-28dad1290bb8)
   )
@@ -1630,7 +1623,7 @@
     (stroke (width 0) (type default))
     (uuid 57000dc0-a22e-4d09-b256-3fd8ea281910)
   )
-  (wire (pts (xy 146.05 81.28) (xy 146.05 80.01))
+  (wire (pts (xy 137.16 81.28) (xy 137.16 80.01))
     (stroke (width 0) (type default))
     (uuid 5a69b99c-6ee7-47f8-a122-ecf6b600e7d6)
   )
@@ -1670,7 +1663,7 @@
     (stroke (width 0) (type default))
     (uuid 7b154a1d-f4c4-4d51-ba47-1ffd7c31e270)
   )
-  (wire (pts (xy 133.35 72.39) (xy 137.16 72.39))
+  (wire (pts (xy 124.46 72.39) (xy 128.27 72.39))
     (stroke (width 0) (type default))
     (uuid 7f978ee9-23e0-4b0f-8b43-5fea290a88f6)
   )
@@ -1678,7 +1671,7 @@
     (stroke (width 0) (type default))
     (uuid 80f38940-cc8e-41b3-8647-5b17476e6bba)
   )
-  (wire (pts (xy 118.11 58.42) (xy 123.19 58.42))
+  (wire (pts (xy 109.22 58.42) (xy 114.3 58.42))
     (stroke (width 0) (type default))
     (uuid 81286e43-db90-4241-9674-7b79c1c26d89)
   )
@@ -1698,11 +1691,15 @@
     (stroke (width 0) (type default))
     (uuid 8f245a18-6df2-45cd-adea-8f0bcb3c8dfa)
   )
+  (wire (pts (xy 212.09 66.04) (xy 217.17 66.04))
+    (stroke (width 0) (type default))
+    (uuid 93191223-b134-4622-932f-439ff49ab679)
+  )
   (wire (pts (xy 97.79 165.1) (xy 96.52 165.1))
     (stroke (width 0) (type default))
     (uuid 9321ae5c-306d-4f0f-9700-58f4ca030038)
   )
-  (wire (pts (xy 146.05 72.39) (xy 146.05 74.93))
+  (wire (pts (xy 137.16 72.39) (xy 137.16 74.93))
     (stroke (width 0) (type default))
     (uuid 954af322-06dc-4a35-a705-709d06dd5249)
   )
@@ -1713,6 +1710,10 @@
   (wire (pts (xy 207.01 135.89) (xy 207.01 138.43))
     (stroke (width 0) (type default))
     (uuid 997f0a1e-59bc-43ec-9756-93d3dfa1196a)
+  )
+  (wire (pts (xy 200.66 49.53) (xy 200.66 50.8))
+    (stroke (width 0) (type default))
+    (uuid 9b0ee24a-dd0e-4457-b383-65812655b759)
   )
   (wire (pts (xy 40.64 55.88) (xy 39.37 55.88))
     (stroke (width 0) (type default))
@@ -1762,11 +1763,11 @@
     (stroke (width 0) (type default))
     (uuid c095de33-2b36-445e-ad50-536f9212b4ac)
   )
-  (wire (pts (xy 121.92 27.94) (xy 123.19 27.94))
+  (wire (pts (xy 113.03 27.94) (xy 114.3 27.94))
     (stroke (width 0) (type default))
     (uuid c5e17759-eabd-44df-866d-63840434ac2b)
   )
-  (wire (pts (xy 156.21 67.31) (xy 156.21 69.85))
+  (wire (pts (xy 147.32 67.31) (xy 147.32 69.85))
     (stroke (width 0) (type default))
     (uuid c877872e-45d3-42f5-8f6a-e9b25ab1704f)
   )
@@ -1777,6 +1778,10 @@
   (wire (pts (xy 246.38 138.43) (xy 246.38 133.35))
     (stroke (width 0) (type default))
     (uuid df6fd062-f290-458a-a749-2b67313e2d30)
+  )
+  (wire (pts (xy 217.17 66.04) (xy 218.44 66.04))
+    (stroke (width 0) (type default))
+    (uuid e00cd27c-66e3-4c90-b633-ad7ec8453bdb)
   )
   (wire (pts (xy 39.37 31.75) (xy 40.64 31.75))
     (stroke (width 0) (type default))
@@ -1806,7 +1811,7 @@
     (stroke (width 0) (type default))
     (uuid ee5f33b7-ece7-4ab1-b93a-ed80f910e78f)
   )
-  (wire (pts (xy 142.24 72.39) (xy 146.05 72.39))
+  (wire (pts (xy 133.35 72.39) (xy 137.16 72.39))
     (stroke (width 0) (type default))
     (uuid f01cf6b8-1c79-4edb-b016-2b8d49922978)
   )
@@ -1839,7 +1844,7 @@
     (uuid ffa41dff-5564-49cf-ae21-6ca57b48cc3d)
   )
 
-  (rectangle (start 19.05 20.32) (end 95.25 88.9)
+  (rectangle (start 19.05 20.32) (end 86.36 88.9)
     (stroke (width 0) (type default))
     (fill (type none))
     (uuid 19628db7-baa4-4886-8172-903da8860ab4)
@@ -1859,7 +1864,7 @@
     (fill (type none))
     (uuid 52b1d0a3-7813-49c5-8728-692095214c56)
   )
-  (rectangle (start 105.41 20.32) (end 170.18 90.17)
+  (rectangle (start 90.17 20.32) (end 168.91 90.17)
     (stroke (width 0) (type default))
     (fill (type none))
     (uuid f3ed65cf-9e93-4925-b05d-24a49860b90a)
@@ -2156,7 +2161,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 04543249-2ae7-4b2e-941a-10f23c13cf88)
   )
-  (text "100ohm\n@100MHz" (at 135.89 81.28 0)
+  (text "100ohm\n@100MHz" (at 127 81.28 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 09375f0f-2473-4063-8c00-a03d5e5a8e3e)
   )
@@ -2172,17 +2177,13 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 44d73fde-b730-4910-b949-2354bcda346a)
   )
-  (text "\nTXM12M0004252DBCEO00T" (at 25.4 72.0089 0)
+  (text "TAXM12M4RFBCCT2T" (at 25.4 72.0089 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 4bff14ff-1c7d-456d-897e-d40b6c738ca4)
   )
   (text "USB hub \n" (at 20.32 19.05 0)
     (effects (font (size 2.54 2.54)) (justify left bottom))
     (uuid 5f0f090f-90fe-451b-83bb-5fc689acdbfb)
-  )
-  (text "Confirm this \ncircuit works" (at 248.92 154.94 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 6d3bf60a-9df8-45c1-911d-ad7fd134197d)
   )
   (text "Only way to be able to switch between SD mode and spi mode is power cycle"
     (at 182.88 27.94 0)
@@ -2204,7 +2205,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid a13859d8-0c9e-4e02-9f66-8d6ea3197e4a)
   )
-  (text "Change according to pcb\n" (at 68.58 67.31 0)
+  (text "Change according to pcb\n" (at 34.29 82.55 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid b28ad115-04e8-4f75-916b-a5c70591e0c3)
   )
@@ -2226,7 +2227,7 @@
     (uuid c7d78804-f1c7-4efb-a063-33224cb870b8)
   )
   (text "open source by default\nplace cts resistor and\nremove pulldown for \npush pull"
-    (at 245.11 125.73 0)
+    (at 250.19 124.46 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid d86fd6ff-0415-4e11-9c35-fca02c335675)
   )
@@ -2240,7 +2241,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid e3586337-be36-4379-a530-3b659cf5e7f7)
   )
-  (text "USB SD card reader\n \n" (at 106.68 22.86 0)
+  (text "USB SD card reader\n \n" (at 91.44 22.86 0)
     (effects (font (size 2.54 2.54)) (justify left bottom))
     (uuid e9b8354e-1ff3-4032-a021-8ff35fbbba54)
   )
@@ -2289,13 +2290,6 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "TXD" (shape passive) (at 238.76 125.73 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 052d20a6-03a0-4cf1-b5cd-7786d1770652)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 244.0016 125.73 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
   (global_label "EN" (shape passive) (at 262.89 148.59 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 0915a6ef-9970-4a31-87b7-2dcc424ca371)
@@ -2303,17 +2297,24 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "SD_DETECT" (shape passive) (at 218.44 66.04 180) (fields_autoplaced)
+  (global_label "SD_DETECT" (shape passive) (at 212.09 66.04 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 16a9d314-714a-4d2f-8d9a-441e2cda2761)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 206.4252 66.04 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 200.0752 66.04 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "SD_D-" (shape passive) (at 123.19 50.8 180) (fields_autoplaced)
+  (global_label "DAT0{slash}MISO_SD" (shape passive) (at 320.04 72.39 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 1a2fe5db-52e6-4f31-8c84-9b7133643b74)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 304.336 72.39 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "SD_D-" (shape passive) (at 114.3 50.8 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 1b38d37d-5ff6-46dc-995b-8b83853ecc9f)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 115.106 50.8 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 106.216 50.8 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -2338,10 +2339,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "UART_D+" (shape passive) (at 80.01 39.37 0) (fields_autoplaced)
+  (global_label "UART_D+" (shape passive) (at 74.93 55.88 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 2671ec2e-8ef2-4b84-ade0-7b0412086392)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 90.2712 39.37 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 85.1912 55.88 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2394,10 +2395,10 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "DAT0_RD" (shape passive) (at 156.21 39.37 0) (fields_autoplaced)
+  (global_label "DAT0_RD" (shape passive) (at 147.32 39.37 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 45de68a9-ca7b-401f-a54f-989e3897ee41)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 166.0478 39.37 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 157.1578 39.37 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2429,10 +2430,17 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "DAT3_RD" (shape passive) (at 156.21 50.8 0) (fields_autoplaced)
+  (global_label "CMD{slash}MOSI_SD" (shape passive) (at 320.04 62.23 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 56c9549e-c2d1-43d3-a9c8-e4a63700f964)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 304.8803 62.23 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "DAT3_RD" (shape passive) (at 147.32 50.8 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 57e582a9-ef8f-48a4-ae5f-16837d4e22f2)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 166.0478 50.8 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 157.1578 50.8 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2471,10 +2479,10 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "SD_D-" (shape passive) (at 80.01 35.56 0) (fields_autoplaced)
+  (global_label "SD_D-" (shape passive) (at 74.93 50.8 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 77c5e6a7-8020-4e0c-864c-49fc61208e87)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 88.094 35.56 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 83.014 50.8 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2485,10 +2493,17 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "DAT1_RD" (shape passive) (at 156.21 43.18 0) (fields_autoplaced)
+  (global_label "DAT2_SD" (shape passive) (at 320.04 57.15 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 7c5d9648-1a7a-4756-a680-266794194e72)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 310.2627 57.15 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "DAT1_RD" (shape passive) (at 147.32 43.18 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 7f1e23bf-2661-4dde-8910-9b71545f922d)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 166.0478 43.18 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 157.1578 43.18 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2499,10 +2514,17 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "SD_D+" (shape passive) (at 80.01 33.02 0) (fields_autoplaced)
+  (global_label "CLK_SD" (shape passive) (at 320.04 67.31 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 8c04a26c-dc91-4b36-afe0-e49167066d1b)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 311.2303 67.31 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "SD_D+" (shape passive) (at 74.93 48.26 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 8c9999f5-6f4e-4937-a1f1-8290bbe4fd6d)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 88.094 33.02 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 83.014 48.26 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2527,6 +2549,13 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
+  (global_label "DAT1_SD" (shape passive) (at 320.04 74.93 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 9d178c33-2cc7-40b1-b638-de6413f24cd3)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 310.2627 74.93 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
   (global_label "SD_SELECT" (shape passive) (at 124.46 129.54 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 9fdf99c7-d841-4bee-8ecc-40ef26606d74)
@@ -2541,10 +2570,10 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "CLK_RD" (shape passive) (at 156.21 31.75 0) (fields_autoplaced)
+  (global_label "CLK_RD" (shape passive) (at 147.32 31.75 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid a9edc612-b12f-4f89-a6f3-e6164f6f538d)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 165.0802 31.75 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 156.1902 31.75 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2562,6 +2591,13 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
+  (global_label "DAT3{slash}CS_SD" (shape passive) (at 320.04 59.69 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid c4dfb123-7c8a-4f13-ac27-c55a274d4d39)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 306.4527 59.69 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
   (global_label "DAT2_SD" (shape passive) (at 36.83 124.46 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid cfcce754-98c7-491c-aca3-e95e53b40c9d)
@@ -2569,10 +2605,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "DAT2_RD" (shape passive) (at 156.21 46.99 0) (fields_autoplaced)
+  (global_label "DAT2_RD" (shape passive) (at 147.32 46.99 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid d5b22ac9-307b-40bd-9369-8569ec4a4ab8)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 166.0478 46.99 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 157.1578 46.99 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2597,10 +2633,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "VBUS" (shape passive) (at 114.3 27.94 180) (fields_autoplaced)
+  (global_label "VBUS" (shape passive) (at 105.41 27.94 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid de1d5b14-b30b-4bdf-8d77-1b6f29245094)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 107.6069 27.94 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 98.7169 27.94 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -2625,10 +2661,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "DVDD" (shape passive) (at 129.54 72.39 180) (fields_autoplaced)
+  (global_label "DVDD" (shape passive) (at 120.65 72.39 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid e73fc748-2446-4dc7-be43-a01580057c52)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 122.8469 72.39 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 113.9569 72.39 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -2639,17 +2675,17 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "UART_D-" (shape passive) (at 80.01 41.91 0) (fields_autoplaced)
+  (global_label "UART_D-" (shape passive) (at 74.93 58.42 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid e92614d9-8a0d-4cb5-b899-c4e02eee8643)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 90.2712 41.91 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 85.1912 58.42 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "CMD_RD" (shape passive) (at 156.21 35.56 0) (fields_autoplaced)
+  (global_label "CMD_RD" (shape passive) (at 147.32 35.56 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid ed922308-5290-408f-9589-48598b337cfa)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 165.5035 35.56 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 156.6135 35.56 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2660,11 +2696,18 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "SD_D+" (shape passive) (at 123.19 46.99 180) (fields_autoplaced)
+  (global_label "SD_D+" (shape passive) (at 114.3 46.99 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid f27bcb2a-2dcd-4129-a097-b95626cb28c5)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 115.106 46.99 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 106.216 46.99 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "MCLK_TXD" (shape passive) (at 238.76 125.73 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid f7f31454-7eb1-43ea-a939-d88a55e9898d)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 249.9887 125.73 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
   (global_label "CMD{slash}MOSI_SD" (shape passive) (at 252.73 83.82 180) (fields_autoplaced)
@@ -2678,7 +2721,7 @@
   (symbol (lib_id "Device:C_Small") (at 207.01 140.97 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0601a589-eb9a-40e6-91fc-8c42544f2d69)
-    (property "Reference" "C24" (at 209.55 140.3413 0)
+    (property "Reference" "C35" (at 209.55 140.3413 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1uF" (at 209.55 142.8813 0)
@@ -2695,7 +2738,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "C24") (unit 1)
+          (reference "C35") (unit 1)
         )
       )
     )
@@ -2704,7 +2747,7 @@
   (symbol (lib_id "power:GND") (at 44.45 175.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 06c06627-5718-41f2-b2a0-9d9d76aa9f02)
-    (property "Reference" "#PWR054" (at 44.45 181.61 0)
+    (property "Reference" "#PWR063" (at 44.45 181.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 44.45 180.34 0)
@@ -2720,7 +2763,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR054") (unit 1)
+          (reference "#PWR063") (unit 1)
         )
       )
     )
@@ -2729,7 +2772,7 @@
   (symbol (lib_id "Device:C_Small") (at 128.27 160.02 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0b2551b9-d76b-4a49-9114-b5da458ec711)
-    (property "Reference" "C33" (at 123.19 153.67 90)
+    (property "Reference" "C31" (at 123.19 153.67 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 123.19 156.21 90)
@@ -2746,7 +2789,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "C33") (unit 1)
+          (reference "C31") (unit 1)
         )
       )
     )
@@ -2755,7 +2798,7 @@
   (symbol (lib_id "power:GND") (at 262.89 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0b659133-03ca-4e9d-b05a-81fa27915bdb)
-    (property "Reference" "#PWR044" (at 262.89 100.33 0)
+    (property "Reference" "#PWR096" (at 262.89 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 262.89 99.06 0)
@@ -2771,7 +2814,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR044") (unit 1)
+          (reference "#PWR096") (unit 1)
         )
       )
     )
@@ -2780,7 +2823,7 @@
   (symbol (lib_id "Device:C_Small") (at 40.64 119.38 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0cf055fe-fad2-4c64-88cc-ea2056ad8c59)
-    (property "Reference" "C30" (at 35.56 113.03 90)
+    (property "Reference" "C22" (at 35.56 113.03 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 35.56 115.57 90)
@@ -2797,7 +2840,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "C30") (unit 1)
+          (reference "C22") (unit 1)
         )
       )
     )
@@ -2806,7 +2849,7 @@
   (symbol (lib_id "Device:C_Small") (at 29.21 59.69 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0d53aff1-d16b-4369-8f5c-578c462e193c)
-    (property "Reference" "C21" (at 31.75 66.04 90)
+    (property "Reference" "C20" (at 31.75 66.04 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "24pF" (at 31.75 63.5 90)
@@ -2823,7 +2866,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "C21") (unit 1)
+          (reference "C20") (unit 1)
         )
       )
     )
@@ -2832,7 +2875,7 @@
   (symbol (lib_id "power:GND") (at 231.14 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0dbb8ce0-1a8d-43f6-b024-0d475646385f)
-    (property "Reference" "#PWR043" (at 231.14 105.41 0)
+    (property "Reference" "#PWR093" (at 231.14 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 231.14 104.14 0)
@@ -2848,7 +2891,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR043") (unit 1)
+          (reference "#PWR093") (unit 1)
         )
       )
     )
@@ -2857,7 +2900,7 @@
   (symbol (lib_id "power:GND") (at 132.08 175.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 10e04e04-e074-447b-b0b1-69dec2ad809e)
-    (property "Reference" "#PWR058" (at 132.08 181.61 0)
+    (property "Reference" "#PWR083" (at 132.08 181.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 132.08 180.34 0)
@@ -2873,25 +2916,25 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR058") (unit 1)
+          (reference "#PWR083") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "gl823:GL823") (at 139.7 34.29 0) (unit 1)
+  (symbol (lib_id "gl823:GL823") (at 130.81 34.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 13700911-2668-46a4-aa8f-99c61fc85f36)
-    (property "Reference" "U6" (at 139.7 21.59 0)
+    (property "Reference" "U16" (at 130.81 21.59 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "GL823" (at 139.7 24.13 0)
+    (property "Value" "GL823" (at 130.81 24.13 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Package_SO:SSOP-16_3.9x4.9mm_P0.635mm" (at 139.7 24.13 0)
+    (property "Footprint" "Package_SO:SSOP-16_3.9x4.9mm_P0.635mm" (at 130.81 24.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 139.7 24.13 0)
+    (property "Datasheet" "" (at 130.81 24.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 1c437be7-f0fe-462f-846d-df16e054c101))
@@ -2913,7 +2956,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "U6") (unit 1)
+          (reference "U16") (unit 1)
         )
       )
     )
@@ -2922,7 +2965,7 @@
   (symbol (lib_id "power:GND") (at 200.66 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 154854f6-c816-470f-a33d-34965f73cd79)
-    (property "Reference" "#PWR027" (at 200.66 63.5 0)
+    (property "Reference" "#PWR088" (at 200.66 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 200.66 62.23 0)
@@ -2938,25 +2981,93 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR027") (unit 1)
+          (reference "#PWR088") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Device:C_Small") (at 146.05 77.47 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 1a87d8f4-a031-4e52-89cb-12eabf291f3d)
-    (property "Reference" "C12" (at 148.59 76.8413 0)
-      (effects (font (size 1.27 1.27)) (justify left))
+  (symbol (lib_id "Connector:TestPoint") (at 320.04 62.23 270) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 157d5f77-b875-4dd8-aa61-6d3f0dc76022)
+    (property "Reference" "TP6" (at 328.93 62.23 90)
+      (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "4.7uF" (at 148.59 79.3813 0)
-      (effects (font (size 1.27 1.27)) (justify left))
+    (property "Value" "TestPoint" (at 321.437 64.77 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
     )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 146.05 77.47 0)
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm" (at 320.04 57.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 146.05 77.47 0)
+    (property "Datasheet" "~" (at 320.04 57.15 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 9af442bb-519e-479d-b65d-0a723f93acee))
+    (instances
+      (project "Music32v3"
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995"
+          (reference "TP6") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/af454206-d75b-4aff-be43-99164678694a"
+          (reference "TP14") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/4998783d-7055-40b0-9979-647930a37834"
+          (reference "TP19") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
+          (reference "TP23") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 200.66 49.53 90) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 19a9f9ab-42b1-4563-886a-88c8f98e8b2a)
+    (property "Reference" "TP6" (at 190.5 49.53 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "TestPoint" (at 199.263 46.99 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (at 200.66 54.61 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 200.66 54.61 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 0b3c1650-e0c5-4729-8dc9-57fb9486b27e))
+    (instances
+      (project "Music32v3"
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995"
+          (reference "TP6") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/af454206-d75b-4aff-be43-99164678694a"
+          (reference "TP14") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/4998783d-7055-40b0-9979-647930a37834"
+          (reference "TP19") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
+          (reference "TP28") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C_Small") (at 137.16 77.47 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 1a87d8f4-a031-4e52-89cb-12eabf291f3d)
+    (property "Reference" "C32" (at 139.7 76.8413 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "4.7uF" (at 139.7 79.3813 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 137.16 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 137.16 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 70d9caa0-e2ce-40de-9502-bbcf1fbee6b4))
@@ -2964,7 +3075,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "C12") (unit 1)
+          (reference "C32") (unit 1)
         )
       )
     )
@@ -2973,7 +3084,7 @@
   (symbol (lib_id "power:GND") (at 240.03 151.13 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1c730f20-c884-40af-becd-9cb6066a8a4e)
-    (property "Reference" "#PWR077" (at 240.03 157.48 0)
+    (property "Reference" "#PWR094" (at 240.03 157.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 240.03 156.21 0)
@@ -2989,32 +3100,32 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR077") (unit 1)
+          (reference "#PWR094") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:GND") (at 156.21 69.85 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 147.32 69.85 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1cd7cbe7-ffc6-4ca4-b122-e52a1a460cd5)
-    (property "Reference" "#PWR025" (at 156.21 76.2 0)
+    (property "Reference" "#PWR084" (at 147.32 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 156.21 74.93 0)
+    (property "Value" "GND" (at 147.32 74.93 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 156.21 69.85 0)
+    (property "Footprint" "" (at 147.32 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 156.21 69.85 0)
+    (property "Datasheet" "" (at 147.32 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 60c12a18-be8d-4976-8575-11cee5a4b293))
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR025") (unit 1)
+          (reference "#PWR084") (unit 1)
         )
       )
     )
@@ -3023,7 +3134,7 @@
   (symbol (lib_id "power:GND") (at 88.9 134.62 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 26e87c6e-09e9-4b22-9da4-14ee4d445c1c)
-    (property "Reference" "#PWR050" (at 88.9 140.97 0)
+    (property "Reference" "#PWR069" (at 88.9 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 88.9 139.7 0)
@@ -3039,7 +3150,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR050") (unit 1)
+          (reference "#PWR069") (unit 1)
         )
       )
     )
@@ -3048,7 +3159,7 @@
   (symbol (lib_id "sl2-1s:SL2-1s") (at 58.42 44.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 29728823-7616-413a-a8a0-7711ed49d2fa)
-    (property "Reference" "U7" (at 58.42 24.13 0)
+    (property "Reference" "U13" (at 58.42 24.13 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "~" (at 58.42 30.48 0)
@@ -3079,7 +3190,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "U7") (unit 1)
+          (reference "U13") (unit 1)
         )
       )
     )
@@ -3130,7 +3241,7 @@
           (reference "R13") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "R14") (unit 1)
+          (reference "R32") (unit 1)
         )
       )
       (project "Phone"
@@ -3159,44 +3270,29 @@
     )
   )
 
-  (symbol (lib_id "power:+3.3V") (at 97.79 113.03 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 341954cc-44d2-46f3-ae62-06237880c61d)
-    (property "Reference" "#PWR079" (at 97.79 116.84 0)
+  (symbol (lib_id "power:+3V3") (at 140.97 151.13 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 2f912343-5d05-4e74-a551-05c452503d1f)
+    (property "Reference" "#PWR011" (at 140.97 154.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3.3V" (at 97.79 109.22 0)
+    (property "Value" "+3V3" (at 142.24 147.32 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 97.79 113.03 0)
+    (property "Footprint" "" (at 140.97 151.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 97.79 113.03 0)
+    (property "Datasheet" "" (at 140.97 151.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a1bf4a0d-59ef-4389-a866-b714dd034a99))
+    (pin "1" (uuid 0613814d-c32f-47c8-b6ea-af33651f0e8c))
     (instances
-      (project "Music_32_V2"
-        (path "/14681cc8-ddd4-43ff-b571-daca84d76d6b/7e2784a5-f2e0-46a2-afdf-a2d608e4af43"
-          (reference "#PWR079") (unit 1)
-        )
-      )
-      (project "Audio test board"
-        (path "/20b27d83-997e-4e2f-816d-b30d828687eb"
-          (reference "#PWR?") (unit 1)
-        )
-      )
       (project "Music32v3"
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/4998783d-7055-40b0-9979-647930a37834"
+          (reference "#PWR011") (unit 1)
+        )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR046") (unit 1)
-        )
-      )
-      (project "Ipod"
-        (path "/c4cf9ad0-abea-4c32-bb0b-367e5261d002"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/c4cf9ad0-abea-4c32-bb0b-367e5261d002/39f6bc4b-6dc6-4355-84d9-efa9a6355287"
-          (reference "#PWR076") (unit 1)
+          (reference "#PWR086") (unit 1)
         )
       )
     )
@@ -3205,7 +3301,7 @@
   (symbol (lib_id "power:GND") (at 53.34 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 346bca51-ec21-4c1d-858c-25ea93927671)
-    (property "Reference" "#PWR035" (at 53.34 77.47 0)
+    (property "Reference" "#PWR064" (at 53.34 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 53.34 76.2 0)
@@ -3221,32 +3317,32 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR035") (unit 1)
+          (reference "#PWR064") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:GND") (at 121.92 33.02 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 113.03 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3493eff8-2eae-41a0-b8d4-bd0e56a7b995)
-    (property "Reference" "#PWR026" (at 121.92 39.37 0)
+    (property "Reference" "#PWR075" (at 113.03 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 121.92 38.1 0)
+    (property "Value" "GND" (at 113.03 38.1 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 121.92 33.02 0)
+    (property "Footprint" "" (at 113.03 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 121.92 33.02 0)
+    (property "Datasheet" "" (at 113.03 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid d6c51795-0449-40cb-b1bb-97b66edf6275))
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR026") (unit 1)
+          (reference "#PWR075") (unit 1)
         )
       )
     )
@@ -3255,7 +3351,7 @@
   (symbol (lib_id "Device:C_Small") (at 40.64 160.02 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 399ac287-2e4c-4bc9-8437-445a58ecfb3f)
-    (property "Reference" "C31" (at 35.56 153.67 90)
+    (property "Reference" "C23" (at 35.56 153.67 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 35.56 156.21 90)
@@ -3272,25 +3368,25 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "C31") (unit 1)
+          (reference "C23") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Device:R") (at 118.11 62.23 0) (unit 1)
+  (symbol (lib_id "Device:R") (at 109.22 62.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3cdfc134-5070-42f9-9781-84856c93e4e1)
-    (property "Reference" "R8" (at 115.57 61.595 0)
+    (property "Reference" "R29" (at 106.68 61.595 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "2K" (at 115.57 64.135 0)
+    (property "Value" "2K" (at 106.68 64.135 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 116.332 62.23 90)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 107.442 62.23 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 118.11 62.23 0)
+    (property "Datasheet" "~" (at 109.22 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 58958f74-f86e-4a2a-8d33-c07f7a75dabc))
@@ -3298,7 +3394,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "R8") (unit 1)
+          (reference "R29") (unit 1)
         )
       )
     )
@@ -3307,7 +3403,7 @@
   (symbol (lib_id "power:GND") (at 36.83 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 406f1c80-c947-409e-82a4-ee12be7b3aef)
-    (property "Reference" "#PWR066" (at 36.83 125.73 0)
+    (property "Reference" "#PWR057" (at 36.83 125.73 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 33.02 120.65 0)
@@ -3323,25 +3419,25 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR066") (unit 1)
+          (reference "#PWR057") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Device:C_Small") (at 121.92 30.48 0) (mirror y) (unit 1)
+  (symbol (lib_id "Device:C_Small") (at 113.03 30.48 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 419abaee-925b-44e7-b130-48f1a0f4dcf3)
-    (property "Reference" "C14" (at 119.38 29.8513 0)
+    (property "Reference" "C28" (at 110.49 29.8513 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "4.7uF" (at 119.38 32.3913 0)
+    (property "Value" "4.7uF" (at 110.49 32.3913 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 121.92 30.48 0)
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 113.03 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 121.92 30.48 0)
+    (property "Datasheet" "~" (at 113.03 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 3269508f-f440-4170-bde6-9dc67bb11f9f))
@@ -3349,7 +3445,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "C14") (unit 1)
+          (reference "C28") (unit 1)
         )
       )
     )
@@ -3358,7 +3454,7 @@
   (symbol (lib_id "power:GND") (at 36.83 62.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4376593c-a104-4b71-a8e0-6047d57e3aca)
-    (property "Reference" "#PWR038" (at 36.83 68.58 0)
+    (property "Reference" "#PWR056" (at 36.83 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 41.91 63.5 0)
@@ -3374,32 +3470,32 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR038") (unit 1)
+          (reference "#PWR056") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:GND") (at 118.11 73.66 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 109.22 73.66 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 493b3b72-78c6-4ef2-a8ad-ef0e973d5290)
-    (property "Reference" "#PWR022" (at 118.11 80.01 0)
+    (property "Reference" "#PWR074" (at 109.22 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 118.11 78.74 0)
+    (property "Value" "GND" (at 109.22 78.74 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 118.11 73.66 0)
+    (property "Footprint" "" (at 109.22 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 118.11 73.66 0)
+    (property "Datasheet" "" (at 109.22 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 6f07375b-43b3-4047-a94a-028fe0d991ec))
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR074") (unit 1)
         )
       )
     )
@@ -3408,7 +3504,7 @@
   (symbol (lib_id "power:GND") (at 207.01 143.51 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4ae83c90-051c-4408-94f9-94b0d8ed7db1)
-    (property "Reference" "#PWR061" (at 207.01 149.86 0)
+    (property "Reference" "#PWR091" (at 207.01 149.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 207.01 148.59 0)
@@ -3424,7 +3520,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR061") (unit 1)
+          (reference "#PWR091") (unit 1)
         )
       )
     )
@@ -3433,7 +3529,7 @@
   (symbol (lib_id "Device:C_Small") (at 40.64 35.56 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4df2ecc9-836d-4cd4-a125-23df49f9de30)
-    (property "Reference" "C20" (at 38.1 34.9313 0)
+    (property "Reference" "C21" (at 38.1 34.9313 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 38.1 37.4713 0)
@@ -3450,7 +3546,41 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "C20") (unit 1)
+          (reference "C21") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 320.04 72.39 270) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 5024e1b4-3a60-4f45-8526-9cae4829bab2)
+    (property "Reference" "TP6" (at 328.93 72.39 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "TestPoint" (at 321.437 74.93 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm" (at 320.04 67.31 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 320.04 67.31 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 11f961a4-0714-4306-a742-1987368b9f20))
+    (instances
+      (project "Music32v3"
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995"
+          (reference "TP6") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/af454206-d75b-4aff-be43-99164678694a"
+          (reference "TP14") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/4998783d-7055-40b0-9979-647930a37834"
+          (reference "TP19") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
+          (reference "TP25") (unit 1)
         )
       )
     )
@@ -3478,7 +3608,69 @@
           (reference "#PWR011") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR057") (unit 1)
+          (reference "#PWR082") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+3V3") (at 140.97 113.03 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 5822422b-57c9-4702-9510-ef52f4e9ea60)
+    (property "Reference" "#PWR011" (at 140.97 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3V3" (at 142.24 109.22 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 140.97 113.03 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 140.97 113.03 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 3fefa921-0faf-4bbf-8c69-3fc21718d7b1))
+    (instances
+      (project "Music32v3"
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/4998783d-7055-40b0-9979-647930a37834"
+          (reference "#PWR011") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
+          (reference "#PWR085") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 320.04 57.15 270) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 59fa0753-16d3-4256-b2dd-7fb4b2aa6498)
+    (property "Reference" "TP6" (at 328.93 57.15 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "TestPoint" (at 321.437 59.69 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm" (at 320.04 52.07 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 320.04 52.07 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 7d3f0126-9ba8-4ffc-827c-0848e396d1bc))
+    (instances
+      (project "Music32v3"
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995"
+          (reference "TP6") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/af454206-d75b-4aff-be43-99164678694a"
+          (reference "TP14") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/4998783d-7055-40b0-9979-647930a37834"
+          (reference "TP19") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
+          (reference "TP21") (unit 1)
         )
       )
     )
@@ -3506,7 +3698,7 @@
           (reference "#PWR011") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR051") (unit 1)
+          (reference "#PWR080") (unit 1)
         )
       )
     )
@@ -3515,7 +3707,7 @@
   (symbol (lib_id "power:GND") (at 261.62 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6017415b-9ddd-4954-b8b7-461f4cdcb4ad)
-    (property "Reference" "#PWR059" (at 261.62 72.39 0)
+    (property "Reference" "#PWR095" (at 261.62 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 261.62 71.12 0)
@@ -3531,7 +3723,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR059") (unit 1)
+          (reference "#PWR095") (unit 1)
         )
       )
     )
@@ -3540,7 +3732,7 @@
   (symbol (lib_id "power:GND") (at 44.45 134.62 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6034d961-c157-44c5-97a6-2d71fcf93d4d)
-    (property "Reference" "#PWR041" (at 44.45 140.97 0)
+    (property "Reference" "#PWR061" (at 44.45 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 44.45 139.7 0)
@@ -3556,7 +3748,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR041") (unit 1)
+          (reference "#PWR061") (unit 1)
         )
       )
     )
@@ -3584,7 +3776,7 @@
           (reference "#PWR011") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR053") (unit 1)
+          (reference "#PWR062") (unit 1)
         )
       )
     )
@@ -3593,7 +3785,7 @@
   (symbol (lib_id "Device:C_Small") (at 53.34 67.31 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 63fdc7be-0d31-42fc-aaff-9d5c402a9a53)
-    (property "Reference" "C17" (at 50.8 66.6813 0)
+    (property "Reference" "C24" (at 50.8 66.6813 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 50.8 69.2213 0)
@@ -3610,7 +3802,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "C17") (unit 1)
+          (reference "C24") (unit 1)
         )
       )
     )
@@ -3619,7 +3811,7 @@
   (symbol (lib_id "power:GND") (at 24.13 64.77 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 67a1aa24-1668-4406-854f-90f91af5a1ea)
-    (property "Reference" "#PWR039" (at 24.13 71.12 0)
+    (property "Reference" "#PWR055" (at 24.13 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 24.13 68.58 0)
@@ -3635,7 +3827,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR039") (unit 1)
+          (reference "#PWR055") (unit 1)
         )
       )
     )
@@ -3644,7 +3836,7 @@
   (symbol (lib_name "SN74LVC1G3157_1") (lib_id "sn74lvc1g3157:SN74LVC1G3157") (at 88.9 167.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6ad5f340-f1d0-40ee-88ce-4c0cfaa6c58c)
-    (property "Reference" "U16" (at 91.44 160.02 0)
+    (property "Reference" "U15" (at 91.44 160.02 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SN74LVC1G3157" (at 91.44 175.26 0)
@@ -3665,50 +3857,50 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "U16") (unit 1)
+          (reference "U15") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:GND") (at 146.05 81.28 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 137.16 81.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6c8dfecf-347d-4bc3-a79c-6881e9f606d8)
-    (property "Reference" "#PWR024" (at 146.05 87.63 0)
+    (property "Reference" "#PWR079" (at 137.16 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 146.05 86.36 0)
+    (property "Value" "GND" (at 137.16 86.36 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 146.05 81.28 0)
+    (property "Footprint" "" (at 137.16 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 146.05 81.28 0)
+    (property "Datasheet" "" (at 137.16 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 7eb1751b-d920-4683-8baf-306855315266))
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR079") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Device:LED") (at 118.11 69.85 90) (unit 1)
+  (symbol (lib_id "Device:LED") (at 109.22 69.85 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7e1136d6-6872-4786-98f7-818c859db3cd)
-    (property "Reference" "D3" (at 115.57 68.58 90)
+    (property "Reference" "D4" (at 106.68 68.58 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "LED" (at 115.57 71.12 90)
+    (property "Value" "LED" (at 106.68 71.12 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "LED_SMD:LED_0603_1608Metric" (at 118.11 69.85 0)
+    (property "Footprint" "LED_SMD:LED_0603_1608Metric" (at 109.22 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 118.11 69.85 0)
+    (property "Datasheet" "~" (at 109.22 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 0c7460d3-5754-470a-91a4-390477495c6c))
@@ -3716,7 +3908,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "D3") (unit 1)
+          (reference "D4") (unit 1)
         )
       )
     )
@@ -3752,7 +3944,7 @@
       )
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "R9") (unit 1)
+          (reference "R27") (unit 1)
         )
       )
       (project "Ipod"
@@ -3769,7 +3961,7 @@
   (symbol (lib_id "Power_Protection:TPD2EUSB30") (at 200.66 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8266ce53-35a0-4b7b-872d-c2bfc8b3eab4)
-    (property "Reference" "U10" (at 200.66 74.93 0)
+    (property "Reference" "U19" (at 200.66 74.93 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TPD2EUSB30" (at 200.66 77.47 0)
@@ -3787,7 +3979,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "U10") (unit 1)
+          (reference "U19") (unit 1)
         )
       )
     )
@@ -3796,7 +3988,7 @@
   (symbol (lib_id "power:GND") (at 36.83 160.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 847e046e-9ded-4cfe-a88a-4306f0f8fc89)
-    (property "Reference" "#PWR067" (at 36.83 166.37 0)
+    (property "Reference" "#PWR058" (at 36.83 166.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 33.02 161.29 0)
@@ -3812,50 +4004,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR067") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3.3V") (at 140.97 151.13 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 8a7bfbf2-8405-4a14-b88e-a84c74177b78)
-    (property "Reference" "#PWR080" (at 140.97 154.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3.3V" (at 140.97 147.32 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 140.97 151.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 140.97 151.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid bad72dfe-a270-4f63-b0e5-db0006cecd51))
-    (instances
-      (project "Music_32_V2"
-        (path "/14681cc8-ddd4-43ff-b571-daca84d76d6b/7e2784a5-f2e0-46a2-afdf-a2d608e4af43"
-          (reference "#PWR080") (unit 1)
-        )
-      )
-      (project "Audio test board"
-        (path "/20b27d83-997e-4e2f-816d-b30d828687eb"
-          (reference "#PWR?") (unit 1)
-        )
-      )
-      (project "Music32v3"
-        (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR047") (unit 1)
-        )
-      )
-      (project "Ipod"
-        (path "/c4cf9ad0-abea-4c32-bb0b-367e5261d002"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/c4cf9ad0-abea-4c32-bb0b-367e5261d002/39f6bc4b-6dc6-4355-84d9-efa9a6355287"
-          (reference "#PWR077") (unit 1)
+          (reference "#PWR058") (unit 1)
         )
       )
     )
@@ -3891,7 +4040,7 @@
       )
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "R17") (unit 1)
+          (reference "R28") (unit 1)
         )
       )
       (project "Ipod"
@@ -3908,7 +4057,7 @@
   (symbol (lib_id "power:GND") (at 200.66 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8b6235fc-fa98-43e7-9b0e-a5e65a96b972)
-    (property "Reference" "#PWR045" (at 200.66 100.33 0)
+    (property "Reference" "#PWR089" (at 200.66 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 200.66 99.06 0)
@@ -3924,7 +4073,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR045") (unit 1)
+          (reference "#PWR089") (unit 1)
         )
       )
     )
@@ -3933,7 +4082,7 @@
   (symbol (lib_id "Device:C_Small") (at 29.21 53.34 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8cdfcf0e-8357-4f10-99d4-069dd9be5ab9)
-    (property "Reference" "C22" (at 31.75 46.99 90)
+    (property "Reference" "C19" (at 31.75 46.99 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "24pF" (at 31.75 49.53 90)
@@ -3950,7 +4099,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "C22") (unit 1)
+          (reference "C19") (unit 1)
         )
       )
     )
@@ -3959,7 +4108,7 @@
   (symbol (lib_id "Power_Protection:TPD2EUSB30") (at 231.14 88.9 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8dc25a8a-8eb2-4cc9-af54-e63ccfae6cda)
-    (property "Reference" "U12" (at 231.14 80.01 0)
+    (property "Reference" "U21" (at 231.14 80.01 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TPD2EUSB30" (at 231.14 82.55 0)
@@ -3977,7 +4126,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "U12") (unit 1)
+          (reference "U21") (unit 1)
         )
       )
     )
@@ -3992,7 +4141,7 @@
     (property "Value" "12MHz" (at 36.83 66.9289 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Crystal:Crystal_SMD_2520-4Pin_2.5x2.0mm" (at 36.83 55.88 0)
+    (property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" (at 36.83 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 36.83 55.88 0)
@@ -4011,19 +4160,19 @@
     )
   )
 
-  (symbol (lib_id "Device:C_Small") (at 133.35 77.47 0) (mirror y) (unit 1)
+  (symbol (lib_id "Device:C_Small") (at 124.46 77.47 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 906f604d-3a37-44b5-8f14-95f80625c307)
-    (property "Reference" "C13" (at 130.81 76.8413 0)
+    (property "Reference" "C29" (at 121.92 76.8413 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "4.7uF" (at 130.81 79.3813 0)
+    (property "Value" "4.7uF" (at 121.92 79.3813 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 133.35 77.47 0)
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 124.46 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 133.35 77.47 0)
+    (property "Datasheet" "~" (at 124.46 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 2e6fd111-1087-4170-9f7a-7a9204b7ef88))
@@ -4031,7 +4180,41 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "C13") (unit 1)
+          (reference "C29") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 201.93 135.89 0) (mirror y) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 90b9994a-8c62-4e6e-bd33-bb080f217677)
+    (property "Reference" "TP6" (at 195.58 130.81 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "TestPoint" (at 204.47 134.493 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (at 196.85 135.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 196.85 135.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 52eb60b5-e4cc-4130-8bde-b95b50bbf390))
+    (instances
+      (project "Music32v3"
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995"
+          (reference "TP6") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/af454206-d75b-4aff-be43-99164678694a"
+          (reference "TP14") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/4998783d-7055-40b0-9979-647930a37834"
+          (reference "TP19") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
+          (reference "TP29") (unit 1)
         )
       )
     )
@@ -4040,7 +4223,7 @@
   (symbol (lib_id "power:GND") (at 63.5 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 90f18c6f-5350-452a-8985-5f25124361d7)
-    (property "Reference" "#PWR036" (at 63.5 77.47 0)
+    (property "Reference" "#PWR065" (at 63.5 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 63.5 76.2 0)
@@ -4056,7 +4239,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR036") (unit 1)
+          (reference "#PWR065") (unit 1)
         )
       )
     )
@@ -4065,7 +4248,7 @@
   (symbol (lib_id "Device:C_Small") (at 63.5 67.31 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 95754f43-d7f2-4392-93c5-22fd28914f66)
-    (property "Reference" "C19" (at 60.96 66.6813 0)
+    (property "Reference" "C25" (at 60.96 66.6813 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 60.96 69.2213 0)
@@ -4082,7 +4265,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "C19") (unit 1)
+          (reference "C25") (unit 1)
         )
       )
     )
@@ -4091,7 +4274,7 @@
   (symbol (lib_id "power:GND") (at 132.08 134.62 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 95f731c6-eec4-4b3a-ace6-ae24c9d6dabc)
-    (property "Reference" "#PWR052" (at 132.08 140.97 0)
+    (property "Reference" "#PWR081" (at 132.08 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 132.08 139.7 0)
@@ -4107,7 +4290,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR052") (unit 1)
+          (reference "#PWR081") (unit 1)
         )
       )
     )
@@ -4156,7 +4339,7 @@
       )
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "C18") (unit 1)
+          (reference "C33") (unit 1)
         )
       )
       (project "Phone"
@@ -4210,7 +4393,7 @@
       )
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "R16") (unit 1)
+          (reference "R31") (unit 1)
         )
       )
       (project "Ipod"
@@ -4227,7 +4410,7 @@
   (symbol (lib_name "SN74LVC1G3157_1") (lib_id "sn74lvc1g3157:SN74LVC1G3157") (at 132.08 127 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9b2afd20-e6b4-41c0-85f2-d91418fbed09)
-    (property "Reference" "U19" (at 134.62 119.38 0)
+    (property "Reference" "U17" (at 134.62 119.38 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SN74LVC1G3157" (at 134.62 134.62 0)
@@ -4248,7 +4431,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "U19") (unit 1)
+          (reference "U17") (unit 1)
         )
       )
     )
@@ -4257,7 +4440,7 @@
   (symbol (lib_id "Device:C_Small") (at 201.93 140.97 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9d2b6f3a-f884-4d6a-b031-b60a0713cb41)
-    (property "Reference" "C23" (at 199.39 140.3413 0)
+    (property "Reference" "C34" (at 199.39 140.3413 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1uF" (at 199.39 142.8813 0)
@@ -4274,7 +4457,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "C23") (unit 1)
+          (reference "C34") (unit 1)
         )
       )
     )
@@ -4283,7 +4466,7 @@
   (symbol (lib_name "SN74LVC1G3157_1") (lib_id "sn74lvc1g3157:SN74LVC1G3157") (at 132.08 167.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a2febaf5-b149-4b3d-a742-5f382eb5c29f)
-    (property "Reference" "U17" (at 134.62 160.02 0)
+    (property "Reference" "U18" (at 134.62 160.02 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SN74LVC1G3157" (at 134.62 175.26 0)
@@ -4304,7 +4487,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "U17") (unit 1)
+          (reference "U18") (unit 1)
         )
       )
     )
@@ -4332,50 +4515,7 @@
           (reference "#PWR011") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR055") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3.3V") (at 97.79 151.13 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid aa4c86ee-6b2e-400f-b91a-7b978ab89f58)
-    (property "Reference" "#PWR081" (at 97.79 154.94 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3.3V" (at 97.79 147.32 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 97.79 151.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 97.79 151.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9d2381f4-35f6-4ae2-9f61-12d352b3e745))
-    (instances
-      (project "Music_32_V2"
-        (path "/14681cc8-ddd4-43ff-b571-daca84d76d6b/7e2784a5-f2e0-46a2-afdf-a2d608e4af43"
-          (reference "#PWR081") (unit 1)
-        )
-      )
-      (project "Audio test board"
-        (path "/20b27d83-997e-4e2f-816d-b30d828687eb"
-          (reference "#PWR?") (unit 1)
-        )
-      )
-      (project "Music32v3"
-        (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR048") (unit 1)
-        )
-      )
-      (project "Ipod"
-        (path "/c4cf9ad0-abea-4c32-bb0b-367e5261d002"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/c4cf9ad0-abea-4c32-bb0b-367e5261d002/39f6bc4b-6dc6-4355-84d9-efa9a6355287"
-          (reference "#PWR078") (unit 1)
+          (reference "#PWR070") (unit 1)
         )
       )
     )
@@ -4384,7 +4524,7 @@
   (symbol (lib_id "Device:R_Small") (at 240.03 139.7 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid aab2b032-289b-4953-85ca-44411301fb40)
-    (property "Reference" "R20" (at 242.57 139.065 0)
+    (property "Reference" "R33" (at 242.57 139.065 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "DNP" (at 242.57 141.605 0)
@@ -4401,7 +4541,103 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "R20") (unit 1)
+          (reference "R33") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 320.04 74.93 270) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid aab59250-fb7f-42da-9917-f1fd3b9a4bc2)
+    (property "Reference" "TP6" (at 328.93 74.93 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "TestPoint" (at 321.437 77.47 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm" (at 320.04 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 320.04 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid ab957801-ad79-42c9-8dac-e9d546f6a4c7))
+    (instances
+      (project "Music32v3"
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995"
+          (reference "TP6") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/af454206-d75b-4aff-be43-99164678694a"
+          (reference "TP14") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/4998783d-7055-40b0-9979-647930a37834"
+          (reference "TP19") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
+          (reference "TP26") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+3V3") (at 97.79 113.03 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid ac5d4a23-31d7-4fbe-9945-02fbb52f8ad4)
+    (property "Reference" "#PWR011" (at 97.79 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3V3" (at 99.06 109.22 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 97.79 113.03 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 97.79 113.03 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 6a886e0a-d663-42a4-8596-5b4910e7d4d2))
+    (instances
+      (project "Music32v3"
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/4998783d-7055-40b0-9979-647930a37834"
+          (reference "#PWR011") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
+          (reference "#PWR072") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 320.04 59.69 270) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid ad9198a8-fcbf-4afb-a378-f21d66b9ca1e)
+    (property "Reference" "TP6" (at 328.93 59.69 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "TestPoint" (at 321.437 62.23 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm" (at 320.04 54.61 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 320.04 54.61 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid f0667785-f98c-45f6-8f6b-4f6c8d4690d2))
+    (instances
+      (project "Music32v3"
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995"
+          (reference "TP6") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/af454206-d75b-4aff-be43-99164678694a"
+          (reference "TP14") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/4998783d-7055-40b0-9979-647930a37834"
+          (reference "TP19") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
+          (reference "TP22") (unit 1)
         )
       )
     )
@@ -4410,7 +4646,7 @@
   (symbol (lib_id "Device:C_Small") (at 85.09 160.02 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b43e09d5-619e-4847-a603-5f0b4ae233c1)
-    (property "Reference" "C32" (at 80.01 153.67 90)
+    (property "Reference" "C27" (at 80.01 153.67 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 80.01 156.21 90)
@@ -4427,7 +4663,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "C32") (unit 1)
+          (reference "C27") (unit 1)
         )
       )
     )
@@ -4457,7 +4693,7 @@
           (reference "Q2") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "Q5") (unit 1)
+          (reference "Q6") (unit 1)
         )
       )
     )
@@ -4466,7 +4702,7 @@
   (symbol (lib_id "Connector:Micro_SD_Card_Det1") (at 241.3 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b6e7d396-6719-4801-81f2-e62abfe80219)
-    (property "Reference" "J3" (at 241.935 33.02 0)
+    (property "Reference" "J2" (at 241.935 33.02 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Micro_SD_Card_Det1" (at 241.935 35.56 0)
@@ -4491,7 +4727,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "J3") (unit 1)
+          (reference "J2") (unit 1)
         )
       )
     )
@@ -4519,7 +4755,7 @@
           (reference "#PWR011") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR040") (unit 1)
+          (reference "#PWR060") (unit 1)
         )
       )
     )
@@ -4528,7 +4764,7 @@
   (symbol (lib_id "power:GND") (at 124.46 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bdc1e774-dfeb-4b8a-a6af-25dc3a8a0f6e)
-    (property "Reference" "#PWR064" (at 124.46 125.73 0)
+    (property "Reference" "#PWR077" (at 124.46 125.73 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 120.65 120.65 0)
@@ -4544,7 +4780,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR064") (unit 1)
+          (reference "#PWR077") (unit 1)
         )
       )
     )
@@ -4553,7 +4789,7 @@
   (symbol (lib_name "SN74LVC1G3157_1") (lib_id "sn74lvc1g3157:SN74LVC1G3157") (at 44.45 127 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c1259a93-75b2-49a3-bd65-d66f60092b76)
-    (property "Reference" "U14" (at 46.99 119.38 0)
+    (property "Reference" "U11" (at 46.99 119.38 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SN74LVC1G3157" (at 46.99 134.62 0)
@@ -4574,7 +4810,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "U14") (unit 1)
+          (reference "U11") (unit 1)
         )
       )
     )
@@ -4583,7 +4819,7 @@
   (symbol (lib_id "Device:C_Small") (at 85.09 119.38 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c20a8c3d-2b46-4135-b637-7e07367f402d)
-    (property "Reference" "C29" (at 80.01 113.03 90)
+    (property "Reference" "C26" (at 80.01 113.03 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 80.01 115.57 90)
@@ -4600,7 +4836,41 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "C29") (unit 1)
+          (reference "C26") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 320.04 67.31 270) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid c4025c19-0faf-4b28-b641-7f07304162b6)
+    (property "Reference" "TP6" (at 328.93 67.31 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "TestPoint" (at 321.437 69.85 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm" (at 320.04 62.23 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 320.04 62.23 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 5b63714f-2910-444a-a826-ce2adea1d820))
+    (instances
+      (project "Music32v3"
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995"
+          (reference "TP6") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/af454206-d75b-4aff-be43-99164678694a"
+          (reference "TP14") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/4998783d-7055-40b0-9979-647930a37834"
+          (reference "TP19") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
+          (reference "TP24") (unit 1)
         )
       )
     )
@@ -4609,7 +4879,7 @@
   (symbol (lib_id "Device:C_Small") (at 128.27 119.38 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c5f7252a-6eee-42be-a5c3-7d7fd27e633d)
-    (property "Reference" "C28" (at 123.19 113.03 90)
+    (property "Reference" "C30" (at 123.19 113.03 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 123.19 115.57 90)
@@ -4626,50 +4896,35 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "C28") (unit 1)
+          (reference "C30") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:+3.3V") (at 140.97 113.03 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid cab20c69-6215-4faa-a125-a49a92366318)
-    (property "Reference" "#PWR083" (at 140.97 116.84 0)
+  (symbol (lib_id "power:+3V3") (at 97.79 151.13 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid c7d04cdd-f5cf-4f9a-99d2-ffb3c2011adb)
+    (property "Reference" "#PWR011" (at 97.79 154.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3.3V" (at 140.97 109.22 0)
+    (property "Value" "+3V3" (at 99.06 147.32 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 140.97 113.03 0)
+    (property "Footprint" "" (at 97.79 151.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 140.97 113.03 0)
+    (property "Datasheet" "" (at 97.79 151.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8b95c0e6-86ce-4cc4-af07-b6cce1c3af58))
+    (pin "1" (uuid 484afd27-a2d4-440a-bc3c-2106d7993e33))
     (instances
-      (project "Music_32_V2"
-        (path "/14681cc8-ddd4-43ff-b571-daca84d76d6b/7e2784a5-f2e0-46a2-afdf-a2d608e4af43"
-          (reference "#PWR083") (unit 1)
-        )
-      )
-      (project "Audio test board"
-        (path "/20b27d83-997e-4e2f-816d-b30d828687eb"
-          (reference "#PWR?") (unit 1)
-        )
-      )
       (project "Music32v3"
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/4998783d-7055-40b0-9979-647930a37834"
+          (reference "#PWR011") (unit 1)
+        )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR049") (unit 1)
-        )
-      )
-      (project "Ipod"
-        (path "/c4cf9ad0-abea-4c32-bb0b-367e5261d002"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/c4cf9ad0-abea-4c32-bb0b-367e5261d002/39f6bc4b-6dc6-4355-84d9-efa9a6355287"
-          (reference "#PWR080") (unit 1)
+          (reference "#PWR073") (unit 1)
         )
       )
     )
@@ -4678,7 +4933,7 @@
   (symbol (lib_id "power:GND") (at 81.28 160.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cc9072e5-84e7-4c08-92ea-7b1966b85d66)
-    (property "Reference" "#PWR068" (at 81.28 166.37 0)
+    (property "Reference" "#PWR067" (at 81.28 166.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 77.47 161.29 0)
@@ -4694,7 +4949,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR068") (unit 1)
+          (reference "#PWR067") (unit 1)
         )
       )
     )
@@ -4703,7 +4958,7 @@
   (symbol (lib_id "power:GND") (at 124.46 160.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d07f884d-4f06-4f9d-b83a-3c4372cc219a)
-    (property "Reference" "#PWR069" (at 124.46 166.37 0)
+    (property "Reference" "#PWR078" (at 124.46 166.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 120.65 161.29 0)
@@ -4719,7 +4974,41 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR069") (unit 1)
+          (reference "#PWR078") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 217.17 66.04 0) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid d0846a6e-902d-45c2-b40d-0b17d7db2960)
+    (property "Reference" "TP6" (at 217.17 72.39 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "TestPoint" (at 214.63 67.437 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 222.25 66.04 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 222.25 66.04 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid f72f4ed3-1fed-48d0-b578-907b6b0c3c19))
+    (instances
+      (project "Music32v3"
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995"
+          (reference "TP6") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/af454206-d75b-4aff-be43-99164678694a"
+          (reference "TP14") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/4998783d-7055-40b0-9979-647930a37834"
+          (reference "TP19") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
+          (reference "TP30") (unit 1)
         )
       )
     )
@@ -4728,7 +5017,7 @@
   (symbol (lib_name "SN74LVC1G3157_1") (lib_id "sn74lvc1g3157:SN74LVC1G3157") (at 44.45 167.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d1293a10-ab2a-4eb7-9f96-aae9e38917a0)
-    (property "Reference" "U15" (at 46.99 160.02 0)
+    (property "Reference" "U12" (at 46.99 160.02 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SN74LVC1G3157" (at 46.99 175.26 0)
@@ -4749,7 +5038,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "U15") (unit 1)
+          (reference "U12") (unit 1)
         )
       )
     )
@@ -4758,7 +5047,7 @@
   (symbol (lib_id "ch340x:CH340X") (at 226.06 135.89 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d1a25df7-f760-4805-8f02-c9f79c4cbabc)
-    (property "Reference" "U18" (at 226.06 118.11 0)
+    (property "Reference" "U20" (at 226.06 118.11 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "CH340X" (at 226.06 120.65 0)
@@ -4783,7 +5072,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "U18") (unit 1)
+          (reference "U20") (unit 1)
         )
       )
     )
@@ -4819,7 +5108,7 @@
       )
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "R18") (unit 1)
+          (reference "R30") (unit 1)
         )
       )
       (project "Ipod"
@@ -4836,7 +5125,7 @@
   (symbol (lib_id "Device:Q_PMOS_GSD") (at 198.12 40.64 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e194922b-42a1-4c3f-b1cc-2e2fbd194461)
-    (property "Reference" "Q4" (at 204.47 41.275 0)
+    (property "Reference" "Q5" (at 204.47 41.275 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "CJ3139K" (at 204.47 38.735 0)
@@ -4854,7 +5143,41 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "Q4") (unit 1)
+          (reference "Q5") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 193.04 40.64 0) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid e252110f-5b36-4361-aad2-12c4e263d828)
+    (property "Reference" "TP6" (at 193.04 46.99 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "TestPoint" (at 190.5 42.037 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (at 198.12 40.64 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 198.12 40.64 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid ed13fd78-098b-4bdf-9dfe-d5fbf9f1e083))
+    (instances
+      (project "Music32v3"
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995"
+          (reference "TP6") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/af454206-d75b-4aff-be43-99164678694a"
+          (reference "TP14") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/4998783d-7055-40b0-9979-647930a37834"
+          (reference "TP19") (unit 1)
+        )
+        (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
+          (reference "TP27") (unit 1)
         )
       )
     )
@@ -4863,7 +5186,7 @@
   (symbol (lib_id "power:GND") (at 81.28 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e3ad4f8e-cc1e-4322-9d70-a695ada1d74c)
-    (property "Reference" "#PWR065" (at 81.28 125.73 0)
+    (property "Reference" "#PWR066" (at 81.28 125.73 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 77.47 120.65 0)
@@ -4879,7 +5202,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR065") (unit 1)
+          (reference "#PWR066") (unit 1)
         )
       )
     )
@@ -4907,25 +5230,25 @@
           (reference "#PWR011") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR042") (unit 1)
+          (reference "#PWR068") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Device:FerriteBead_Small") (at 139.7 72.39 270) (mirror x) (unit 1)
+  (symbol (lib_id "Device:FerriteBead_Small") (at 130.81 72.39 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e58a8e05-6b8e-41fc-b162-801a501b9fe9)
-    (property "Reference" "FB1" (at 139.7 76.2 90)
+    (property "Reference" "FB1" (at 130.81 76.2 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "100ohm@100MHz" (at 139.7 76.2 90)
+    (property "Value" "100ohm@100MHz" (at 130.81 76.2 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 139.7 74.168 90)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 130.81 74.168 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 139.7 72.39 0)
+    (property "Datasheet" "~" (at 130.81 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 43edb2e2-45eb-45bd-8203-005820c0d3f0))
@@ -4963,7 +5286,7 @@
           (reference "Q2") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "Q6") (unit 1)
+          (reference "Q7") (unit 1)
         )
       )
     )
@@ -4972,7 +5295,7 @@
   (symbol (lib_name "SN74LVC1G3157_1") (lib_id "sn74lvc1g3157:SN74LVC1G3157") (at 88.9 127 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e6ac5f3f-f2f2-470c-9dcb-18a0b4767f9a)
-    (property "Reference" "U13" (at 91.44 119.38 0)
+    (property "Reference" "U14" (at 91.44 119.38 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SN74LVC1G3157" (at 91.44 134.62 0)
@@ -4993,7 +5316,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "U13") (unit 1)
+          (reference "U14") (unit 1)
         )
       )
     )
@@ -5002,7 +5325,7 @@
   (symbol (lib_id "power:GND") (at 88.9 175.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e7e9a380-f0b5-4507-a8a9-7b5330a02f43)
-    (property "Reference" "#PWR056" (at 88.9 181.61 0)
+    (property "Reference" "#PWR071" (at 88.9 181.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 88.9 180.34 0)
@@ -5018,7 +5341,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR056") (unit 1)
+          (reference "#PWR071") (unit 1)
         )
       )
     )
@@ -5027,7 +5350,7 @@
   (symbol (lib_id "power:GND") (at 201.93 143.51 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e9d1c8c4-0005-4108-83ca-19c1d1f1360e)
-    (property "Reference" "#PWR060" (at 201.93 149.86 0)
+    (property "Reference" "#PWR090" (at 201.93 149.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 201.93 148.59 0)
@@ -5043,7 +5366,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR060") (unit 1)
+          (reference "#PWR090") (unit 1)
         )
       )
     )
@@ -5052,7 +5375,7 @@
   (symbol (lib_id "Power_Protection:TPD2EUSB30") (at 262.89 83.82 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ee0b9714-f4d0-49b4-bdd2-882fc23b9f1d)
-    (property "Reference" "U11" (at 262.89 74.93 0)
+    (property "Reference" "U22" (at 262.89 74.93 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TPD2EUSB30" (at 262.89 77.47 0)
@@ -5070,7 +5393,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "U11") (unit 1)
+          (reference "U22") (unit 1)
         )
       )
     )
@@ -5098,7 +5421,7 @@
           (reference "#PWR011") (unit 1)
         )
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR075") (unit 1)
+          (reference "#PWR087") (unit 1)
         )
       )
     )
@@ -5107,7 +5430,7 @@
   (symbol (lib_id "Device:R_Small") (at 240.03 147.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f581f980-8345-4739-805d-c4298f39dc49)
-    (property "Reference" "R19" (at 242.57 146.685 0)
+    (property "Reference" "R34" (at 242.57 146.685 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4K7" (at 242.57 149.225 0)
@@ -5124,7 +5447,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "R19") (unit 1)
+          (reference "R34") (unit 1)
         )
       )
     )
@@ -5133,7 +5456,7 @@
   (symbol (lib_id "power:GND") (at 40.64 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid faffbbb0-5d86-4312-9f71-377e26212281)
-    (property "Reference" "#PWR037" (at 40.64 46.99 0)
+    (property "Reference" "#PWR059" (at 40.64 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 35.56 41.91 0)
@@ -5149,32 +5472,32 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR037") (unit 1)
+          (reference "#PWR059") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:GND") (at 133.35 81.28 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 124.46 81.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fc384b82-2bf2-4b28-b5e3-fd931330d513)
-    (property "Reference" "#PWR023" (at 133.35 87.63 0)
+    (property "Reference" "#PWR076" (at 124.46 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 133.35 86.36 0)
+    (property "Value" "GND" (at 124.46 86.36 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 133.35 81.28 0)
+    (property "Footprint" "" (at 124.46 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 133.35 81.28 0)
+    (property "Datasheet" "" (at 124.46 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 04b3a921-9e0d-4b0b-8071-c2f187d09982))
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR076") (unit 1)
         )
       )
     )
@@ -5183,7 +5506,7 @@
   (symbol (lib_id "power:GND") (at 226.06 152.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fe2c21a5-048f-4c6b-b23a-9d24e77cec0d)
-    (property "Reference" "#PWR074" (at 226.06 158.75 0)
+    (property "Reference" "#PWR092" (at 226.06 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 226.06 157.48 0)
@@ -5199,7 +5522,7 @@
     (instances
       (project "Music32v3"
         (path "/492e826b-8900-4c12-8604-1c812b2e1995/3c978059-9f1a-4ff6-9071-c1971133aa54"
-          (reference "#PWR074") (unit 1)
+          (reference "#PWR092") (unit 1)
         )
       )
     )
