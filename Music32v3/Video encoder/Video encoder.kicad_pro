@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 1.5,
-          "width": 1.5
+          "drill": 0.762,
+          "height": 1.524,
+          "width": 1.524
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -65,7 +65,7 @@
         "connection_width": "warning",
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
-        "courtyards_overlap": "warning",
+        "courtyards_overlap": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
@@ -173,11 +173,10 @@
       ],
       "track_widths": [
         0.0,
-        0.0,
+        0.15,
         0.2,
-        0.2624,
-        0.3,
-        0.65
+        0.2875,
+        0.3
       ],
       "via_dimensions": [
         {
@@ -402,7 +401,7 @@
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
-      "simulation_model_issue": "ignore",
+      "simulation_model_issue": "error",
       "unannotated": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
@@ -414,7 +413,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Music32v3.kicad_pro",
+    "filename": "Video encoder.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -440,14 +439,7 @@
     "meta": {
       "version": 3
     },
-    "net_colors": {
-      "D+": "rgb(0, 255, 0)",
-      "D-": "rgb(0, 255, 0)",
-      "SD_D+": "rgb(2, 255, 6)",
-      "SD_D-": "rgb(2, 255, 6)",
-      "UART_D+": "rgb(2, 255, 6)",
-      "UART_D-": "rgb(0, 255, 0)"
-    },
+    "net_colors": null,
     "netclass_assignments": null,
     "netclass_patterns": []
   },
@@ -457,7 +449,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "Music32v3.step",
+      "step": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -487,7 +479,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "../../../",
+    "plot_directory": "",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
@@ -498,24 +490,8 @@
   },
   "sheets": [
     [
-      "492e826b-8900-4c12-8604-1c812b2e1995",
+      "abe5e273-8829-4d5b-96a0-c07c59b6e7e2",
       ""
-    ],
-    [
-      "af454206-d75b-4aff-be43-99164678694a",
-      "Main Chip"
-    ],
-    [
-      "4998783d-7055-40b0-9979-647930a37834",
-      "PSU"
-    ],
-    [
-      "3c978059-9f1a-4ff6-9071-c1971133aa54",
-      "USB Stuff"
-    ],
-    [
-      "d3a81cb8-516c-4320-9b3b-4dd6f93f2457",
-      "Codec"
     ]
   ],
   "text_variables": {}

@@ -3920,7 +3920,7 @@
     (property "Reference" "R37" (at 102.87 118.11 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "100K" (at 102.87 115.57 0)
+    (property "Value" "1M" (at 102.87 115.57 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 99.568 116.84 90)
