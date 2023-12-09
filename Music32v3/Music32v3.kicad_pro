@@ -441,12 +441,12 @@
       "version": 3
     },
     "net_colors": {
-      "D+": "rgb(0, 255, 0)",
-      "D-": "rgb(0, 255, 0)",
+      "D+": "rgb(255, 153, 0)",
+      "D-": "rgb(255, 153, 0)",
       "SD_D+": "rgb(2, 255, 6)",
       "SD_D-": "rgb(2, 255, 6)",
-      "UART_D+": "rgb(2, 255, 6)",
-      "UART_D-": "rgb(0, 255, 0)"
+      "UART_D+": "rgb(0, 0, 255)",
+      "UART_D-": "rgb(0, 0, 255)"
     },
     "netclass_assignments": null,
     "netclass_patterns": []
