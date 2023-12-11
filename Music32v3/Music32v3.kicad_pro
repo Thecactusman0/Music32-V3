@@ -441,12 +441,17 @@
       "version": 3
     },
     "net_colors": {
+      "+1V8": "rgb(0, 255, 0)",
+      "+3V3": "rgb(0, 255, 0)",
+      "/PSU/VIN": "rgb(0, 132, 0)",
       "D+": "rgb(255, 153, 0)",
       "D-": "rgb(255, 153, 0)",
-      "SD_D+": "rgb(2, 255, 6)",
-      "SD_D-": "rgb(2, 255, 6)",
-      "UART_D+": "rgb(0, 0, 255)",
-      "UART_D-": "rgb(0, 0, 255)"
+      "DVDD": "rgb(0, 255, 0)",
+      "SD_D+": "rgb(255, 153, 0)",
+      "SD_D-": "rgb(255, 153, 0)",
+      "UART_D+": "rgb(255, 153, 0)",
+      "UART_D-": "rgb(255, 153, 0)",
+      "VBUS": "rgb(0, 132, 0)"
     },
     "netclass_assignments": null,
     "netclass_patterns": []
@@ -487,7 +492,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "../../../",
+    "plot_directory": "./",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
