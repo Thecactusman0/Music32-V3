@@ -2902,10 +2902,10 @@
       (thermal_bridge_angle 45) (tstamp 8d2769f7-a3e0-4710-8646-ad83cbc3aab4))
     (pad "S" smd roundrect (at 3.25 0) (size 2 3) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (thermal_bridge_angle 45) (tstamp 813253da-dc5c-4104-9fb7-a449df1cf239))
-    (model "/Users/nicholas/Downloads/Batt connector.step"
-      (offset (xyz 0 -0 0))
+    (model "${KIPRJMOD}/3D models/Batt connector.step"
+      (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 180))
+      (rotate (xyz 0 0 -180))
     )
   )
 
@@ -9987,8 +9987,8 @@
       (net 51 "ENCODER_1") (pinfunction "1") (pintype "input") (tstamp 4abb7b46-49fd-4d12-9fc0-f33cf590f49f))
     (pad "6" smd rect (at 8.375002 2.15315 90) (size 2.3622 1.1938) (layers "B.Cu" "B.Paste" "B.Mask")
       (net 3 "GND") (pinfunction "GND") (pintype "input") (tstamp 7af59ab6-ca4a-4df3-97e9-d44c97f46adf))
-    (model "/Users/nicholas/Desktop/srgp400200.stp"
-      (offset (xyz 0 -0 0))
+    (model "${KIPRJMOD}/3D models/srgp400200 copy.stp"
+      (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
     )
