@@ -2335,8 +2335,8 @@
     (property "Datasheet" "~" (at 58.42 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a88616d4-23da-416a-8cb6-2525e5413aef))
-    (pin "2" (uuid 3e547b44-8202-48c9-bc23-f5bb83f67fa9))
+    (pin "1" (uuid e7ff7756-5ec5-4c05-9c5c-adfa79649a01))
+    (pin "2" (uuid 259d39a6-a7ec-4714-aed3-cd7ccbe7fa8b))
     (instances
       (project "Music_32_V2"
         (path "/14681cc8-ddd4-43ff-b571-daca84d76d6b/386f7fcb-de3c-43a3-99bd-dcf77f99c217"
@@ -2444,8 +2444,8 @@
     (property "Datasheet" "~" (at 26.67 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 643d2e13-76f3-4656-9a8d-c8344452a6da))
-    (pin "2" (uuid 6a6dff92-20e1-4c7d-b548-2889caa78d77))
+    (pin "1" (uuid 45ba95b1-68f0-46bb-9f72-e124fdefe59c))
+    (pin "2" (uuid 1de539f9-42e3-4772-95a3-02b7f6013a11))
     (instances
       (project "Music_32_V2"
         (path "/14681cc8-ddd4-43ff-b571-daca84d76d6b/386f7fcb-de3c-43a3-99bd-dcf77f99c217"
@@ -2648,8 +2648,8 @@
     (property "Datasheet" "~" (at 44.45 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3bff92b8-83bc-49ac-8dec-be918ec3366e))
-    (pin "2" (uuid 897f168b-1a77-4bec-a91e-68ed710aa346))
+    (pin "1" (uuid d5a5fc6c-aaee-495d-b61c-4659666fe601))
+    (pin "2" (uuid 17c46712-8a79-4170-b22b-1e8e2dda56aa))
     (instances
       (project "Music_32_V2"
         (path "/14681cc8-ddd4-43ff-b571-daca84d76d6b/386f7fcb-de3c-43a3-99bd-dcf77f99c217"
@@ -2723,8 +2723,8 @@
     (property "Datasheet" "~" (at 86.36 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3857f2a9-274d-4698-9861-c78b1452aedf))
-    (pin "2" (uuid 2bbed6ba-60d1-423f-9817-19bab8007e2a))
+    (pin "1" (uuid f8b8002d-8d2e-4e9c-8d29-630128a17242))
+    (pin "2" (uuid e21d4852-e471-48a5-b554-263a316cad4b))
     (instances
       (project "Music_32_V2"
         (path "/14681cc8-ddd4-43ff-b571-daca84d76d6b/386f7fcb-de3c-43a3-99bd-dcf77f99c217"
@@ -3277,7 +3277,7 @@
     (property "Reference" "R13" (at 92.71 140.97 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "10K" (at 92.71 138.43 0)
+    (property "Value" "1K" (at 92.71 138.43 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 98.298 139.7 90)
@@ -3467,8 +3467,8 @@
     (property "Datasheet" "~" (at 69.85 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ff0c893d-c6d5-4f6b-be2a-f18165660853))
-    (pin "2" (uuid 406f3909-529b-4804-98b7-c5f2040cf4fd))
+    (pin "1" (uuid 2d4ef573-922e-49f1-b8d4-b09697470d92))
+    (pin "2" (uuid eaf3c6c2-5d3f-434b-9fbb-d540e864327d))
     (instances
       (project "Music_32_V2"
         (path "/14681cc8-ddd4-43ff-b571-daca84d76d6b/386f7fcb-de3c-43a3-99bd-dcf77f99c217"
